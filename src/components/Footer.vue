@@ -13,28 +13,27 @@
         >
           Made by Tyhiesha Johnson — Copyright 2024
         </p>
-        <div
+        <!-- <div
           class="icon-container"
           style="padding-top: 15px; padding-right: 100px"
         >
-          <!-- Icons -->
-          <!-- WhatsApp -->
-          <router-link to="https://api.whatsapp.com/send?phone=27760775241"
+        
+  /*        <router-link to="https://api.whatsapp.com/send?phone=27760775241"
             ><i class="fa-brands fa-whatsapp" style="color: #ffdb58"></i
           ></router-link>
-          <!-- LinkedIn -->
+
           <router-link to="https://www.linkedin.com/in/tyhieshajohnson/"
             ><i class="fa-brands fa-linkedin" style="color: #ffdb58"></i
           ></router-link>
-          <!-- Github -->
+    
           <router-link to="https://github.com/tyhieshajohnson/"
             ><i class="fa-brands fa-github" style="color: #ffdb58"></i
           ></router-link>
-          <!-- Instagram -->
+    
           <router-link to="https://www.instagram.com/gold4n.ace/"
             ><i class="fa-brands fa-instagram" style="color: #ffdb58"></i
           ></router-link>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

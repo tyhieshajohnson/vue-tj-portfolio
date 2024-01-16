@@ -2,7 +2,7 @@
   <!-- Navigation Bar -->
   <Navigation />
   <!-- End of Navigation Bar -->
-
+  <RouterView />
   <!-- Footer -->
   <Footer/>
   <!-- Footer End -->
@@ -11,17 +11,19 @@
 <script>
 import Navigation from "@/components/Navigation.vue";
 import Footer from "@/components/Footer.vue";
+import { RouterView } from "vue-router";
 
 export default {
   name: "HomeView",
   components: {
     Navigation,
-    Footer
-  },
+    Footer,
+    RouterView
+},
 };
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
