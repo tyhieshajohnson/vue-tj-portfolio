@@ -1,7 +1,6 @@
 <!-- HTML -->
 <template>
   <div class="projects">
-    <h1>Projects</h1>
     <Projects
       v-for="project of projects"
       :key="projects.id"
@@ -32,4 +31,17 @@ export default {
 </script>
 
 <!-- CSS -->
-<style scoped></style>
+<style scoped>
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 60px;
+  background-color: #202020;
+}
+</style>
