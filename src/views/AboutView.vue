@@ -109,11 +109,12 @@
                   display: flex;
                   justify-content: center;
                   padding-top: 50px;
+                  color: white;
                 "
               >
                 Who Am I?
               </h1>
-              <p style="font-family: 'Manrope', sans-serif">
+              <p style="font-family: 'Manrope', sans-serif; color: white">
                 Hello there! I'm Tyhiesha Johnson, I am passionate about
                 learning and the technology industry. Welcome to my digital
                 world.<br />
@@ -124,9 +125,17 @@
                   font-family: 'Manrope', sans-serif;
                   display: flex;
                   justify-content: center;
+                  color: white;
                 "
               >
-                <p>
+                <p
+                  style="
+                    font-family: 'Manrope', sans-serif;
+                    display: flex;
+                    justify-content: center;
+                    color: white;
+                  "
+                >
                   I am an aspiring Front-End Developer, living in Cape Town,
                   South Africa. My journey started in Marketing, as a part-time
                   Social Media Manager focusing mainly on Analytics and Content
@@ -149,10 +158,9 @@
               <!-- Resume Button -->
               <div
                 id="resume-button"
-                style="padding-left: 100px; padding-top: 20px"
+                style="padding-left: 200px; padding-top: 20px"
               >
                 <button>
-                  <i class="fa-solid fa-file-arrow-down"></i>
                   <p
                     class="resume-button"
                     style="
@@ -164,7 +172,7 @@
                     <a
                       href="https://www.hostize.com/v/A6xPpdqQO7/resume---tyhiesha-ty-johnson-pdf"
                       download
-                      >DOWNLOAD RESUME</a
+                      >DOWNLOAD</a
                     >
                   </p>
                 </button>
@@ -189,12 +197,6 @@
   z-index: 100;
 }
 
-.nav-links {
-  display: flex;
-  flex-flow: row nowrap;
-  margin-right: 30px;
-}
-
 /* About Information Div */
 #about-information {
   width: 1307px;
@@ -212,7 +214,6 @@
 
 /* Resume Button */
 button {
-  background-color: #181818;
   margin-left: 50px;
   border-radius: 4px;
   border: none;
