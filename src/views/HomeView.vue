@@ -35,11 +35,11 @@
     <!-- Home Button -->
     <div id="home-button">
       <button type="button">
-        <i class="fa-regular fa-envelope"></i>
+        <i class="fa-regular fa-envelope" style="color: white; font-size:medium;"></i>
         <p class="home-button">
           <a
             href="https://mail.google.com/mail/u/0/"
-            style="text-decoration: none"
+            style="text-decoration: none; color: white; font-size: 15px;"
           >
             johnsontyhiesha@gmail.com
           </a>
@@ -75,10 +75,15 @@ export default {
 
 #home-information {
   float: inline-start;
+  margin-top: 100px;
+  margin-left: 100px;
 }
 
 #home-image {
   float: inline-end;
+  margin-top: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
 }
 /* Image Size and Border */
 .home-image {
@@ -87,7 +92,18 @@ export default {
   height: 400px;
   margin-right: 50px;
   margin-top: 50px;
+  box-shadow: 0 0 10px rgba(255, 254, 254, 0.5);
+  animation: glow 2s infinite alternate;
 }
+
+@keyframes glow {
+            0% {
+                box-shadow: 0 0 10px #FFDB58;
+            }
+            100% {
+                box-shadow: 0 0 20px #FFDB58, 0 0 30px #FFDB58, 0 0 40px #FFDB58;
+            }
+        }
 
 .home-description {
   font-style: normal;
@@ -108,6 +124,8 @@ button {
 #home-button {
   height: 64px;
   width: 400px;
+  margin-left: 100px;
+  margin-bottom: 50px;
 }
 
 .home-button p {
@@ -117,5 +135,39 @@ button {
 
 h1, p {
   color: #DEDEDE;
+}
+
+@media screen and (max-width: 390px) {
+  .body {
+  background-color: #202020;
+  width: max-content;
+}
+/* Home Content */
+/* Alignment */
+#home-container {
+  overflow: hidden;
+}
+
+#home-information {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.home-description {
+  font-style: normal;
+  font-weight: 100;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Image Size and Border */
+.home-image {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  justify-content: start;
+  box-shadow: 0 0 10px rgba(255, 254, 254, 0.5);
+  margin-right: 50%;
+}
 }
 </style>
