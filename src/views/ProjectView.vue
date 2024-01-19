@@ -14,7 +14,7 @@
 import Projects from "@/components/Projects.vue";
 
 export default {
-  name: "AboutView",
+  name: "ProjectView",
   components: {
     Projects,
   },

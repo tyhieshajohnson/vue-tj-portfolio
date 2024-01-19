@@ -98,10 +98,10 @@ export default {
 
 @keyframes glow {
             0% {
-                box-shadow: 0 0 10px #FFDB58;
+                box-shadow: 0 0 10px #47525c;
             }
             100% {
-                box-shadow: 0 0 20px #FFDB58, 0 0 30px #FFDB58, 0 0 40px #FFDB58;
+                box-shadow: 0 0 20px #47525c, 0 0 30px #9a9a9a, 0 0 40px #9a9a9a;
             }
         }
 
