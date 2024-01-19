@@ -1,18 +1,66 @@
 <!-- HTML -->
 <template>
-    <!-- Education -->
-  <div class="education">
-    <p>{{ resume.id }}</p>
-    <p>{{ resume.school }}</p>
-    <p>{{ resume.year }}</p>
-    <p>{{ resume.field }}</p>
-    <p>{{ resume.title }}</p>
-    <p>{{ resume.company }}</p>
-    <p>{{ resume.organization }}</p>
-    <p>{{ resume.cause }}</p>
-    <p>{{ resume.heading }}</p>
-    <p>{{ resume.skill }}</p>
-  </div>
+  
+    <h1
+      id="school"
+      style="
+        font-family: 'Manrope', sans-serif;
+        justify-content: center;
+        display: flex;
+        color: black;
+      "
+    >
+      {{ resume.school }}
+    </h1>
+    <p style="
+        font-family: 'Manrope', sans-serif;
+        justify-content: center;
+        display: flex;
+        color: black;
+      ">{{ resume.year }}</p>
+    <p style="
+        font-family: 'Manrope', sans-serif;
+        justify-content: center;
+        display: flex;
+        color: black;
+      ">{{ resume.field }}</p>
+    <h1 style="
+        font-family: 'Manrope', sans-serif;
+        justify-content: center;
+        display: flex;
+        color: black;
+      ">{{ resume.title }}</h1>
+    <p style="
+        font-family: 'Manrope', sans-serif;
+        justify-content: center;
+        display: flex;
+        color: black;
+      ">{{ resume.company }}</p>
+    <h2 style="
+        font-family: 'Manrope', sans-serif;
+        justify-content: center;
+        display: flex;
+        color: black;
+      ">{{ resume.organization }}</h2>
+    <p style="
+        font-family: 'Manrope', sans-serif;
+        justify-content: center;
+        display: flex;
+        color:black;
+      ">{{ resume.cause }}</p>
+    <h1 style="
+        font-family: 'Manrope', sans-serif;
+        justify-content: center;
+        display: flex;
+        color:black;
+      ">{{ resume.heading }}</h1>
+    <p style="
+        font-family: 'Manrope', sans-serif;
+        justify-content: center;
+        display: flex;
+        color:black;
+      ">{{ resume.skill }}</p>
+  
 </template>
 
 <!-- JavaScript -->
@@ -24,5 +72,7 @@ export default {
 
 <!-- CSS -->
 <style scoped>
-
+.body {
+  background-color: #202020;
+}
 </style>
