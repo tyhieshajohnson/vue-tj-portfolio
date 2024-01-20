@@ -82,15 +82,15 @@ export default {
 #home-image {
   float: inline-end;
   margin-top: 100px;
-  margin-right: 100px;
-  margin-bottom: 50px;
+  margin-right: 135px;
+  margin-bottom: 55px;
 }
 /* Image Size and Border */
 .home-image {
   border-radius: 50%;
   width: 400px;
   height: 400px;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   margin-top: 50px;
   box-shadow: 0 0 10px rgba(255, 254, 254, 0.5);
   animation: glow 2s infinite alternate;
