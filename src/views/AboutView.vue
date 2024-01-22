@@ -110,7 +110,7 @@
                   justify-content: center;
                   padding-top: 50px;
                   color: white;
-                "
+                " class="title-who"
               >
                 Who Am I?
               </h1>
@@ -140,12 +140,12 @@
                   South Africa. My journey started in Marketing, as a part-time
                   Social Media Manager focusing mainly on Analytics and Content
                   Creation. As time went on my passion for design grew and my
-                  need to enter the Developer space heightened. I am recent B.A
+                  need to enter the Developer space heightened. <br> I am recent B.A
                   Psychology graduate, and this is what sets me apart as I
                   combine my love for Marketing and Psychology to create
                   websites that are more user-friendly, engaging, and effective
                   in achieving clients goals. People, Research and Beauty are my
-                  passions which aid in the storytelling of websites. My
+                  passions which aid in the storytelling of websites. <br>My
                   creative process includes, planning each part of the journey
                   towards a fully developed website, finding inspiration from my
                   team, And by exploring the great outdoors with hikes, skating
@@ -153,7 +153,7 @@
                   feed my eagerness to gain profienciency in essential coding
                   languages for effective and dynamic web designs And to become
                   the best at what I do.
-                </p>
+            </p>
               </div>
               <!-- Resume Button -->
               <div
@@ -210,6 +210,7 @@
 .about-intro {
   display: flex;
   justify-content: center;
+  padding-top: 30px;
 }
 
 /* Resume Button */
@@ -231,6 +232,20 @@ button {
 .resume-button p {
   font-size: 10px;
   color: #ffffff;
+}
+
+.title-who {
+  font-family: 'Manrope', sans-serif;
+  animation: fadeIn 1s ease-in; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
 }
 
 @media screen and (max-width: 750px) {
