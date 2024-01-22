@@ -137,6 +137,20 @@ h1, p {
   color: #DEDEDE;
 }
 
+.home-description, img {
+  font-family: 'Manrope', sans-serif;
+  animation: fadeIn 1s ease-in; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
 @media screen and (max-width: 390px) {
   .body {
   background-color: #202020;

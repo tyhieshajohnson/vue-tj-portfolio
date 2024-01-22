@@ -17,11 +17,14 @@ import Resume from "@/components/Resume.vue";
 export default {
   name: "ResumeView",
   components: {
-    Resume,
+    Resume
   },
   computed: {
     resume() {
       return this.$store.state.resume;
+      // Run two components into one view
+      // return (this.$store.state.resume || []).filter(resume => resume.skills == this.skills );
+      // return (this.$store.state.resume || []).filter(resume => resume.type == this.type );
     },
   },
 

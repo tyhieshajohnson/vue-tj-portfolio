@@ -32,7 +32,7 @@ export default createStore({
     },
     setTestimonial: (state,testimonial)=> {
       state.testimonial = testimonial;
-    }
+    },
   },
   actions: {
     fetchData: async (context, { url, mutation, dataProperty }) => {
