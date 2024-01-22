@@ -1,6 +1,10 @@
 <template>
     <div class="testimonial">
-      <h1>This is an testimonial page</h1>
+      <Testimonial
+      v-for="testimonial of testimonial"
+      :key="testimonial.id" 
+      :testimonial="testimonial"
+    />
     </div>
   </template>
 
@@ -8,10 +12,34 @@
 import Testimonial from "@/components/Testimonial.vue";
 
 export default {
-  name: "testimonial",
+  name: "TestimonialView",
   components: {
-   Navigation,
-   Testimonial,
- },
+    Testimonial,
+  },
+  computed: {
+    testimonial() {
+      return this.$store.state.testimonial;
+    },
+  },
+
+  mounted() {
+    this.$store.dispatch("getTestimonial");
+  },
 };
 </script>
+
+<!-- CSS -->
+<style scoped>
+.testimonial {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 60px;
+  background-color: #202020;
+}
+</style>
