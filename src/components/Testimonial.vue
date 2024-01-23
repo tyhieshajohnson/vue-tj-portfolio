@@ -4,15 +4,10 @@
     <!-- Carousel -->
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
-        <button
-        v-for="(testimonial, index) in testimonials"
-        :key="index"
+        <button 
         type="button"
         data-bs-target="#carouselExampleCaptions"
-        :data-bs-slide-to="index"
-        :class="{ active: index === 0 }"
         aria-current="true"
-        :aria-label="`Slide ${index + 1}`"
           data-bs-slide-to="0"
           class="active"
           aria-label="Slide 1"
@@ -31,14 +26,14 @@
         ></button>
       </div>
       <div class="carousel-inner">
-        <div v-for="(testimonial, index) in testimonials" :key="index" class="carousel-item" :class="{ active: index === 0 }"></div>
-        <div class="carousel-item active">
-          <img :src="testimonial.image" class="card-img-top" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-item" v-for="(testimonial, index) in testimonials" :key="index" :class="{ active: index == 0 }">
+          <div>
+            <img :src="testimonial.image" class="card-img-top" alt="..." />
             <h5>{{ testimonial.name }}</h5>
             <p>{{ testimonial.message }}</p>
           </div>
         </div>
+        
       </div>
       <button
         class="carousel-control-prev"
@@ -65,10 +60,10 @@
 <!-- JavaScript -->
 <script>
 export default {
-  props: ["testimonial"],
+  props: ["testimonials"],
   data() {
     return {
-      testimonials: [],
+      testimonials: this.$store.state.testimonial,
     };
   },
 };

@@ -2,7 +2,7 @@ import { createStore } from 'vuex'
 const jsonLink = 'https://tyhieshajohnson.github.io/vue-tj-port-json/index.json'
 
 const fetchData = async (url, mutation, dataProperty, context) => {
-  context.commit('setLoading', true);
+  // context.commit('setLoading', true);
   try {
     const response = await fetch(url);
     const data = await response.json();
@@ -11,7 +11,7 @@ const fetchData = async (url, mutation, dataProperty, context) => {
     context.commit('setError', true);
     alert(`Failed to fetch ${mutation}`);
   } finally {
-    context.commit('setLoading', false);
+    // context.commit('setLoading', false);
   }
 };
 
