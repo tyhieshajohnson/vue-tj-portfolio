@@ -31,20 +31,24 @@
       <!-- Location -->
       <div class="icon-1 col">
         <!-- <i class="fa-solid fa-map-pin" style="color: #ffdb58"></i> -->
-        <p style="font-family: 'Manrope', sans-serif; color: white;"><i class="fa-solid fa-map-pin" style="color: #ffdb58"></i>
-          71 Bietou Rd,
-          Cape Town, 7785
+        <p style="font-family: 'Manrope', sans-serif; color: white">
+          <i class="fa-solid fa-map-pin" style="color: #ffdb58"></i>
+          71 Bietou Rd, Cape Town, 7785
         </p>
       </div>
       <!-- Phone Number -->
       <div class="icon-2 col">
         <!-- <i class="fa-solid fa-mobile" style="color: #ffdb58"></i> -->
-        <p style="font-family: 'Manrope', sans-serif; color: white;"><i class="fa-solid fa-mobile" style="color: #ffdb58"></i>+27 76 077 5241</p>
+        <p style="font-family: 'Manrope', sans-serif; color: white">
+          <i class="fa-solid fa-mobile" style="color: #ffdb58"></i>+27 76 077
+          5241
+        </p>
       </div>
       <!-- Email -->
       <div class="icon-3 col">
         <!-- <i class="fa-solid fa-paper-plane" style="color: #ffdb58"></i> -->
-        <p style="font-family: 'Manrope', sans-serif; color: white;"><i class="fa-solid fa-paper-plane" style="color: #ffdb58"></i>
+        <p style="font-family: 'Manrope', sans-serif; color: white">
+          <i class="fa-solid fa-paper-plane" style="color: #ffdb58"></i>
           johnsontyhiesha@gmail.com
         </p>
       </div>
@@ -62,7 +66,7 @@
           <div class="col-md-4 mb-3">
             <label
               for="validationCustom01"
-              style="font-family: 'Manrope', sans-serif;"
+              style="font-family: 'Manrope', sans-serif"
               >First name</label
             >
             <input
@@ -179,20 +183,20 @@
 .icon-container {
   display: flex;
   justify-content: center;
-  padding-left: 150px;
+  padding-left: 200px;
 }
 
 .icon-container .col:hover {
-    transform: scale(1.2); 
-    transition: transform 0.3s ease-in-out; 
-  }
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
 
 #form-container {
   width: 550px;
   height: 500px;
   border-radius: 24px;
   margin-top: 100px;
-  margin-left: 419px;
+  margin-left: 500px;
   margin-bottom: 100px;
   background-color: #3b3b3b;
 }
