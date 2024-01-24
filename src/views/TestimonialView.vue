@@ -6,13 +6,14 @@
       :testimonial="testimonial"
     />
     </div>
+
   </template>
 
 <script>
 import Testimonial from "@/components/Testimonial.vue";
 
 export default {
-  name: "TestimonialView",
+  name: "testimonial",
   components: {
     Testimonial,
   },
