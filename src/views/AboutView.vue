@@ -11,7 +11,7 @@
         >
           <!-- About Information -->
           <!-- Content -->
-          <div class="about-intro row" style="padding-left: 100px">
+'          <div class="about-intro row" style="padding-left: 100px">
             <div class="profile col">
               <!-- carousel -->
               <div
@@ -203,7 +203,7 @@
                         font-size: smaller;
                       "
                       download
-                      >DOWNLOAD</a
+                      >RESUME</a
                     >
                   </p>
                 </button>

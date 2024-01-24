@@ -1,13 +1,13 @@
 <!-- HTML -->
 <template>
-  
+  <div class="body">
     <h1
       id="school"
       style="
         font-family: 'Manrope', sans-serif;
         justify-content: center;
         display: flex;
-        color: black;
+        color: #ffdb58;
       "
     >
       {{ resume.school }}
@@ -16,52 +16,52 @@
         font-family: 'Manrope', sans-serif;
         justify-content: center;
         display: flex;
-        color: black;
+        color:  white;
       ">{{ resume.year }}</p>
     <p style="
         font-family: 'Manrope', sans-serif;
         justify-content: center;
         display: flex;
-        color: black;
+        color: white;
       ">{{ resume.field }}</p>
     <h1 style="
         font-family: 'Manrope', sans-serif;
         justify-content: center;
         display: flex;
-        color: black;
+        color:  #ffdb58;
       ">{{ resume.title }}</h1>
     <p style="
         font-family: 'Manrope', sans-serif;
         justify-content: center;
         display: flex;
-        color: black;
+        color:  white;
       ">{{ resume.company }}</p>
     <h2 style="
         font-family: 'Manrope', sans-serif;
         justify-content: center;
         display: flex;
-        color: black;
+        color:  white;
       ">{{ resume.organization }}</h2>
     <p style="
         font-family: 'Manrope', sans-serif;
         justify-content: center;
         display: flex;
-        color:black;
+        
+        color: white;
       ">{{ resume.cause }}</p>
     <h1 style="
         font-family: 'Manrope', sans-serif;
         justify-content: center;
         display: flex;
-        color:black;
+        color: white;
       ">{{ resume.heading }}</h1>
     <p style="
         font-family: 'Manrope', sans-serif;
         justify-content: center;
         display: flex;
-        color:black;
+        color: #ffdb58;
       ">{{ resume.skill }}</p>
-    
-    <div class="skills">
+      <div class="skills">
         <!-- CSS -->
         <i class="fa-brands fa-css3-alt"></i>
         <!-- HTML -->
@@ -76,6 +76,7 @@
         <i class="fa-brands fa-vuejs"></i>
         <!--  -->
       </div>
+  </div>
 </template>
 
 <!-- JavaScript -->
