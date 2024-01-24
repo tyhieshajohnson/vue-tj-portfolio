@@ -1,7 +1,9 @@
 <template>
   <div class="resume">
-    <h1 class="body" style="font-family: 'Manrope', sans-serif; justify-content: center;
+    <div class="body">
+      <h1 class="body" style="font-family: 'Manrope', sans-serif; justify-content: center;
     display: flex; color: white;">Resume</h1>
+    </div>
     <Resume
       v-for="resume of resume"
       :key="resume.id" 
