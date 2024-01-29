@@ -20,6 +20,7 @@ export default createStore({
     projects: [],
     resume: [],
     testimonial: [],
+    skills: []
   },
   getters: {
   },
@@ -32,6 +33,9 @@ export default createStore({
     },
     setTestimonial: (state,testimonial)=> {
       state.testimonial = testimonial;
+    },
+    setSkills: (state,skills)=> {
+      state.skills = skills;
     },
   },
   actions: {
@@ -52,6 +56,11 @@ export default createStore({
       url: jsonLink,
       mutation: "setTestimonial",
       dataProperty: "testimonial",
+    }),
+    getSkills: async (context) => context.dispatch('fetchData', {
+      url: jsonLink,
+      mutation: "setSkills",
+      dataProperty: "Skills",
     }),
   },
   modules: {

@@ -1,7 +1,12 @@
 <!-- HTML -->
 <template>
   <div class="body">
-    <h1
+    
+    <!-- Education -->
+    <h2 @click="toggleContent" style="justify-content: center; display: flex; color: white;">
+      {{ resume.schoolHeading }}
+      <div v-if="isContentVisible">
+        <h1
       id="school"
       style="
         font-family: 'Manrope', sans-serif;
@@ -17,13 +22,18 @@
         justify-content: center;
         display: flex;
         color:  white;
-      ">{{ resume.year }}</p>
-    <p style="
+      ">{{ resume.schoolYear }}</p>
+      <p style="
         font-family: 'Manrope', sans-serif;
         justify-content: center;
         display: flex;
         color: white;
-      ">{{ resume.field }}</p>
+      ">{{ resume.schoolField }}</p>
+      </div>
+    </h2>
+    <!-- End of Educationn -->
+
+
     <h1 style="
         font-family: 'Manrope', sans-serif;
         justify-content: center;
@@ -61,21 +71,6 @@
         display: flex;
         color: #ffdb58;
       ">{{ resume.skill }}</p>
-      <div class="skills">
-        <!-- CSS -->
-        <i class="fa-brands fa-css3-alt"></i>
-        <!-- HTML -->
-        <i class="fa-brands fa-html5"></i>
-        <!-- JAVASCRIPT -->
-        <i class="fa-brands fa-js"></i>
-        <!-- FIGMA -->
-        <i class="fa-brands fa-figma"></i>
-        <!-- BOOTSTRAP -->
-        <i class="fa-brands fa-bootstrap"></i>
-        <!-- VUE.JS -->
-        <i class="fa-brands fa-vuejs"></i>
-        <!--  -->
-      </div>
   </div>
 </template>
 
@@ -83,12 +78,29 @@
 <script>
 export default {
   props: ["resume"],
-};
+  data() {
+    return {
+      isContentVisible: false,
+    };
+  },
+  methods: {
+    toggleContent() {
+      this.isContentVisible = !this.isContentVisible;
+    }
+  } 
+}; 
 </script>
 
 <!-- CSS -->
 <style scoped>
-.body {
+/* .body {
+  background-color: #202020;
+} */
+
+/* use a onclick and and bind it to the index of the  */
+
+.body div {
+  /* width: 50px; */
   background-color: #202020;
 }
 </style>
