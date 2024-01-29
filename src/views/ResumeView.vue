@@ -1,3 +1,4 @@
+<!-- HTML - Resume Component -->
 <template>
   <div class="resume">
     <div class="body">
@@ -9,29 +10,37 @@
       :key="resume.id" 
       :resume="resume"
     />
+
+    <Skills
+    v-for="skills of skills"
+    :key="skills.id"
+    :skills="skills"
+    />
   </div>
 </template>
 
-<!-- JavaScript -->
+
+<!-- JavaScript - Resume and Skills Component -->
 <script>
 import Resume from "@/components/Resume.vue";
+import Skills from "@/components/Skills.vue";
 
 export default {
   name: "ResumeView",
   components: {
-    Resume
+    Resume,
+    Skills
   },
   computed: {
     resume() {
       return this.$store.state.resume;
-      // Run two components into one view
-      // return (this.$store.state.resume || []).filter(resume => resume.skills == this.skills );
-      // return (this.$store.state.resume || []).filter(resume => resume.type == this.type );
+      return this.$store.state.skills;
     },
   },
 
   mounted() {
     this.$store.dispatch("getResume");
+    this.$store.dispatch("getSkills");
   },
 };
 </script>
