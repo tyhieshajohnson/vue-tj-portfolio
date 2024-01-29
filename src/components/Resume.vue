@@ -1,13 +1,146 @@
 <!-- HTML -->
 <template>
   <div class="body">
-    
     <!-- Education -->
-    <h2 @click="toggleContent" style="justify-content: center; display: flex; color: white;">
+    <h2
+      @click="toggleContent"
+      style="justify-content: center; display: flex; color: white"
+    >
       {{ resume.schoolHeading }}
       <div v-if="isContentVisible">
         <h1
-      id="school"
+          id="school"
+          style="
+            font-family: 'Manrope', sans-serif;
+            justify-content: center;
+            display: flex;
+            color: #ffdb58;
+          "
+        >
+          {{ resume.school }}
+        </h1>
+        <p
+          style="
+            font-family: 'Manrope', sans-serif;
+            justify-content: center;
+            display: flex;
+            color: white;
+          "
+        >
+          {{ resume.schoolYear }}
+        </p>
+        <p
+          style="
+            font-family: 'Manrope', sans-serif;
+            justify-content: center;
+            display: flex;
+            color: white;
+          "
+        >
+          {{ resume.schoolField }}
+        </p>
+      </div>
+    </h2>
+    <!-- End of Educationn -->
+
+    <!-- Work experience -->
+    <div>
+      <h2
+        @click="toggleContent"
+        style="justify-content: center; display: flex; color: white"
+      >
+        {{ resume.workYear }}
+        <div v-if="isContentVisible">
+          <h1
+            style="
+              font-family: 'Manrope', sans-serif;
+              justify-content: center;
+              display: flex;
+              color: #ffdb58;
+            "
+          >
+            {{ resume.workTitle }}
+          </h1>
+          <p
+            style="
+              font-family: 'Manrope', sans-serif;
+              justify-content: center;
+              display: flex;
+              color: white;
+            "
+          >
+            {{ resume.workCompany }}
+          </p>
+        </div>
+      </h2>
+    </div>
+    <!-- End of experience  -->
+
+    <!-- Volunteer Work -->
+    <div>
+      <h2 @click="toggleContent" style="justify-content: center; display: flex; color: white">
+        {{ resume.volunteerYear }}
+        <div v-if="isContentVisible">
+          <h1
+            style="
+              font-family: 'Manrope', sans-serif;
+              justify-content: center;
+              display: flex;
+              color: #ffdb58;
+            "
+          >
+            {{ resume.volunteerTitle }}
+          </h1>
+          <p
+            style="
+              font-family: 'Manrope', sans-serif;
+              justify-content: center;
+              display: flex;
+              color: white;
+            "
+          >
+            {{ resume.volunteerOrganization }}
+          </p>
+        </div>
+      </h2>
+    </div>
+    <!-- Volunteer Work End -->
+
+    <!-- Skills -->
+    <!-- End of Skills -->
+
+    <h2
+      style="
+        font-family: 'Manrope', sans-serif;
+        justify-content: center;
+        display: flex;
+        color: white;
+      "
+    >
+      {{ resume.organization }}
+    </h2>
+    <p
+      style="
+        font-family: 'Manrope', sans-serif;
+        justify-content: center;
+        display: flex;
+
+        color: white;
+      "
+    >
+      {{ resume.cause }}
+    </p>
+    <h1
+      style="
+        font-family: 'Manrope', sans-serif;
+        justify-content: center;
+        display: flex;
+        color: white;
+      "
+    >
+      {{ resume.heading }}
+    </h1>
+    <p
       style="
         font-family: 'Manrope', sans-serif;
         justify-content: center;
@@ -15,62 +148,8 @@
         color: #ffdb58;
       "
     >
-      {{ resume.school }}
-    </h1>
-    <p style="
-        font-family: 'Manrope', sans-serif;
-        justify-content: center;
-        display: flex;
-        color:  white;
-      ">{{ resume.schoolYear }}</p>
-      <p style="
-        font-family: 'Manrope', sans-serif;
-        justify-content: center;
-        display: flex;
-        color: white;
-      ">{{ resume.schoolField }}</p>
-      </div>
-    </h2>
-    <!-- End of Educationn -->
-
-
-    <h1 style="
-        font-family: 'Manrope', sans-serif;
-        justify-content: center;
-        display: flex;
-        color:  #ffdb58;
-      ">{{ resume.title }}</h1>
-    <p style="
-        font-family: 'Manrope', sans-serif;
-        justify-content: center;
-        display: flex;
-        color:  white;
-      ">{{ resume.company }}</p>
-    <h2 style="
-        font-family: 'Manrope', sans-serif;
-        justify-content: center;
-        display: flex;
-        color:  white;
-      ">{{ resume.organization }}</h2>
-    <p style="
-        font-family: 'Manrope', sans-serif;
-        justify-content: center;
-        display: flex;
-        
-        color: white;
-      ">{{ resume.cause }}</p>
-    <h1 style="
-        font-family: 'Manrope', sans-serif;
-        justify-content: center;
-        display: flex;
-        color: white;
-      ">{{ resume.heading }}</h1>
-    <p style="
-        font-family: 'Manrope', sans-serif;
-        justify-content: center;
-        display: flex;
-        color: #ffdb58;
-      ">{{ resume.skill }}</p>
+      {{ resume.skill }}
+    </p>
   </div>
 </template>
 
@@ -86,9 +165,9 @@ export default {
   methods: {
     toggleContent() {
       this.isContentVisible = !this.isContentVisible;
-    }
-  } 
-}; 
+    },
+  },
+};
 </script>
 
 <!-- CSS -->
