@@ -2,7 +2,7 @@
 <template>
   <!-- Body -->
   <div class="vh-100 h-100 body">
-    <div id="home-container">
+    <div id="home-container" style="display: ;">
       <!-- Home Heading -->
       <div class="home-information" id="home-information">
         <svg width="100" height="100">
@@ -15,8 +15,8 @@
             fill="grey"
           />
         </svg>
-        <h1 style="font-family: 'Manrope', sans-serif" class="home-description">
-          Hi, I am <span style="color: #ffdb58">Tyhiesha Johnson</span> <br />A
+        <h1 style="font-family: 'Manrope', sans-serif" class="home-description home-description-media">
+          Hi, I am <span style="color: #ffdb58" class="home-description-span">Tyhiesha Johnson</span> <br />A
           Front-End Developer <br />based in Cape Town.
         </h1>
         <!-- Home Description -->
@@ -176,10 +176,10 @@ img {
   }
 }
 
-@media screen and (max-width: 390px) {
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
   .body {
     background-color: #202020;
-    width: max-content;
   }
   /* Home Content */
   /* Alignment */
@@ -198,15 +198,29 @@ img {
     font-weight: 100;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: medium;
+  }
+
+  .home-description-media {
+    display: flex;
+  }
+
+  .home-description-span {
+    display: flex;
+    justify-content: center;
   }
   /* Image Size and Border */
   .home-image {
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 300px;
+    height: 300px;
     justify-content: start;
     box-shadow: 0 0 10px rgba(255, 254, 254, 0.5);
-    margin-right: 50%;
+    /* margin-right: 50%; */
+  }
+
+  svg {
+    display: none;
   }
 }
 </style>
