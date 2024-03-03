@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Body -->
-    <div class="body vh-100 w-100">
+    <div class="body" style="padding: 100px;" vh-100 w-100>
       <div class="about-information" id="about-information">
         <!-- About Images -->
         <!-- Social Media Mock-up -->
@@ -21,7 +21,7 @@
                 <div class="carousel-indicators">
                   <button
                     type="button"
-                    data-bs-target="#carouselExampleDark"
+                    data-bs-target="#carouselExampleLight"
                     data-bs-slide-to="0"
                     class="active"
                     aria-current="true"
@@ -39,42 +39,42 @@
                     data-bs-slide-to="2"
                     aria-label="Slide 3"
                   ></button>
-                  <button
+                  <!-- <button
                     type="button"
                     data-bs-target="#carouselExampleDark"
                     data-bs-slide-to="3"
                     aria-label="Slide 4"
-                  ></button>
+                  ></button> -->
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
                     <img
                       src="https://i.ibb.co/bv2PM5L/327965335-5888160654578546-5982643696383564344-n.jpg"
                       class="d-block w-100"
-                      alt="..." height="700px"
+                      alt="..." height="600px" style="border-radius: 7px;"
                     />
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
                     <img
                       src="https://i.ibb.co/qCs5zDw/IMG-2294.jpg"
                       class="d-block w-100"
-                      alt="..." height="700px"
+                      alt="..." height="600px" style="border-radius: 7px;"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
                       src="https://i.ibb.co/j345W4s/krugernationalpark-nature-hyena-giraffe-quadbiking-paintballing-archery-godswindowmpumalaga-skyview.jpg"
                       class="d-block w-100"
-                      alt="..." height="700px"
+                      alt="..." height="600px" style="border-radius: 7px;"
                     />
                   </div>
-                  <div class="carousel-item">
+                  <!-- <div class="carousel-item">
                     <img
                       src="https://i.ibb.co/47559Zt/IMG-4179.jpg"
                       class="d-block w-100"
                       alt="..." height="700px"
                     />
-                  </div>
+                  </div> -->
                 </div>
                 <button
                   class="carousel-control-prev"
@@ -224,6 +224,7 @@
 /* Body */
 .carousel-inner {
   box-shadow: 0 0 25px rgba(255, 254, 254, 0.5);
+  border-radius: 7px
   /* animation: glow 2s infinite alternate; */
 }
 .body {
