@@ -1,26 +1,33 @@
-<!-- HTML - Resume Component -->
+<!-- HTML -->
 <template>
-  <div class="resume">
-    <div class="body">
-      <h1 class="body" style="font-family: 'Manrope', sans-serif; justify-content: center;
-    display: flex; color: white;">Resume</h1>
+  <div class="resume body">
+      <h1
+        class="body"
+        style="
+          font-family: 'Manrope', sans-serif;
+          justify-content: center;
+          display: flex;
+          color: white;
+        "
+      >
+        Resume
+      </h1>
+    <div>
+      <h3
+      style="
+          font-family: 'Manrope', sans-serif;
+          justify-content: center;
+          display: flex;
+          color: white;
+        "
+      >My Educational & Career Background</h3>
+      <Resume v-for="resume of resume" :key="resume.id" :resume="resume" />
     </div>
-    <Resume
-      v-for="resume of resume"
-      :key="resume.id" 
-      :resume="resume"
-    />
-
-    <Skills
-    v-for="skills of skills"
-    :key="skills.id"
-    :skills="skills"
-    />
+      <Skills v-for="skills of skills" :key="skills.id" :skills="skills" />
   </div>
 </template>
 
-
-<!-- JavaScript - Resume and Skills Component -->
+<!-- JavaScript -->
 <script>
 import Resume from "@/components/Resume.vue";
 import Skills from "@/components/Skills.vue";
@@ -29,7 +36,7 @@ export default {
   name: "ResumeView",
   components: {
     Resume,
-    Skills
+    Skills,
   },
   computed: {
     resume() {
