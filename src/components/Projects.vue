@@ -1,69 +1,12 @@
 <!-- HTML -->
 <template>
-        <div class="card mb-3 card-group">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img :src="project.image" class="card-img-top" alt="..." height="200px" />
-              <button style="background-color: #181818; width: 50px; height: 50px; align-items: end; border-radius: 7px; margin-top: 100px;">
-                  <p
-                    class="resume-button"
-                    style="
-                      font-family: 'Manrope', sans-serif;
-                      display: flex;
-                      justify-content: center;
-                    "
-                  >
-                    <a
-                      href="https://www.hostize.com/v/A6xPpdqQO7/resume---tyhiesha-ty-johnson-pdf"
-                      style="
-                        text-decoration: none;
-                        color: #ffffff;
-                        padding-top: 11px;
-                        font-size: smaller;
-                      "
-                      download
-                      >LIVE</a
-                    >
-                  </p>
-                </button>
-                <button style="background-color: #181818; width: 50px; height: 50px; border-radius: 7px;">
-                  <p
-                    class="resume-button"
-                    style="
-                      font-family: 'Manrope', sans-serif;
-                      display: flex;
-                      justify-content: center;
-                    "
-                  >
-                    <a
-                      href="https://www.hostize.com/v/A6xPpdqQO7/resume---tyhiesha-ty-johnson-pdf"
-                      style="
-                        text-decoration: none;
-                        color: #ffffff;
-                        padding-top: 11px;
-                        font-size: smaller;
-                      "
-                      download
-                      >CODE</a
-                    >
-                  </p>
-                </button>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title" style="color: #ffdb58;">{{ project.heading }}</h5>
-                <p class="card-text">
-                  {{ project.description }}
-                </p>
-                <p class="card-text">
-                  <small class="text-body-secondary" style="color: lightgray;"
-                    >{{ project.text }}</small
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="card" style="margin-top: 100px;">
+    <img :src="project.image" alt="..." />
+    <div class="info">
+      <div class="name">{{ project.heading }}</div>
+      <div class="description">{{ project.description }}</div>
+    </div>
+  </div>
 </template>
 
 <!-- JavaScript -->
@@ -75,24 +18,59 @@ export default {
 
 <!-- CSS -->
 <style scoped>
-.card-group {
-  width: 25rem;
-  height: 25rem;
-  padding: 16px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
 .card {
-  background-color: #3b3b3b;
-  margin-top: 60px;
+  position: relative;
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(244, 240, 7, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.row {
-    margin: 0 auto;
+.card:hover {
+  transform: translateY(-10px);
 }
 
-p {
-  font-size: x-small;
-  color: #FFFF;
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .info {
+  opacity: 1;
+}
+
+.name {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 1em;
+}
 </style>
