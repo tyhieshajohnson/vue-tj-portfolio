@@ -1,13 +1,12 @@
-<!-- HTML -->
 <template>
   <div class="body">
     <!-- Education -->
     <h2
-      @click="toggleContent"
+      @click="toggleEducationContent"
       style="justify-content: center; display: flex; color: white"
     >
-      {{ resume.schoolHeading }}
-      <div v-if="isContentVisible">
+      {{ isEducationContentVisible ? '' : resume.schoolHeading }}
+      <div v-if="isEducationContentVisible">
         <h1
           id="school"
           style="
@@ -41,16 +40,16 @@
         </p>
       </div>
     </h2>
-    <!-- End of Educationn -->
+    <!-- End of Education -->
 
     <!-- Work experience -->
     <div>
       <h2
-        @click="toggleContent"
+        @click="toggleWorkContent"
         style="justify-content: center; display: flex; color: white"
       >
-        {{ resume.workYear }}
-        <div v-if="isContentVisible">
+        {{ isWorkContentVisible ? '' : resume.workTitle }}
+        <div v-if="isWorkContentVisible">
           <h1
             style="
               font-family: 'Manrope', sans-serif;
@@ -59,7 +58,7 @@
               color: #ffdb58;
             "
           >
-            {{ resume.workTitle }}
+            {{ resume.workYear }}
           </h1>
           <p
             style="
@@ -78,9 +77,9 @@
 
     <!-- Volunteer Work -->
     <div>
-      <h2 @click="toggleContent" style="justify-content: center; display: flex; color: white">
-        {{ resume.volunteerYear }}
-        <div v-if="isContentVisible">
+      <h2 @click="toggleVolunteerContent" style="justify-content: center; display: flex; color: white">
+        {{ isVolunteerContentVisible ? '' : resume.volunteerOrganization }}
+        <div v-if="isVolunteerContentVisible">
           <h1
             style="
               font-family: 'Manrope', sans-serif;
@@ -99,7 +98,7 @@
               color: white;
             "
           >
-            {{ resume.volunteerOrganization }}
+            {{ resume.volunteerYear }}
           </p>
         </div>
       </h2>
@@ -124,7 +123,6 @@
         font-family: 'Manrope', sans-serif;
         justify-content: center;
         display: flex;
-
         color: white;
       "
     >
@@ -159,12 +157,20 @@ export default {
   props: ["resume"],
   data() {
     return {
-      isContentVisible: false,
+      isEducationContentVisible: false,
+      isWorkContentVisible: false,
+      isVolunteerContentVisible: false,
     };
   },
   methods: {
-    toggleContent() {
-      this.isContentVisible = !this.isContentVisible;
+    toggleEducationContent() {
+      this.isEducationContentVisible = !this.isEducationContentVisible;
+    },
+    toggleWorkContent() {
+      this.isWorkContentVisible = !this.isWorkContentVisible;
+    },
+    toggleVolunteerContent() {
+      this.isVolunteerContentVisible = !this.isVolunteerContentVisible;
     },
   },
 };
@@ -183,3 +189,4 @@ export default {
   background-color: #202020;
 }
 </style>
+
