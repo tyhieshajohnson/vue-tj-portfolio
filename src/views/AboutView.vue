@@ -234,13 +234,15 @@
 }
 
 /* About Information Div */
+.about-information div {
+  margin: 0 auto;
+}
+
 #about-information {
   width: 1307px;
   height: 750px;
   border-radius: 24px;
   background-color: #3b3b3b;
-  /* margin-top: 100px; */
-  margin-left: 100px;
 }
 
 .about-intro {
