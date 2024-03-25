@@ -2,7 +2,7 @@
 <template>
   <!-- Bootstrap Navigation Bar -->
   <!-- Main Navigation Container -->
-  <div class="nav-container" style="background-color: #323232">
+  <div class="nav-container" style="background-color: #323232;">
     <nav class="navbar">
       <div class="container-fluid">
         <router-link to="/" class="nav-link">
@@ -19,7 +19,7 @@
         </router-link>
 
         <!-- Navigation Links: Home, About, Personal Projects, Resume, Testimonials and Contact -->
-        <div class="nav-links">
+        <div class="nav-links" style="">
           <router-link
             to="/"
             class="nav-link"
@@ -57,10 +57,27 @@
             >Contact</router-link
           >
         </div>
+        <!-- Burger Menu -->
+        <div class="burger-menu" @click="toggleMenu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
       </div>
     </nav>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  }
+};
+</script>
 
 <!-- CSS -->
 <style scoped>
@@ -87,7 +104,23 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 390px) {
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.burger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 600px) {
   #logo {
     margin-left: 5px;
   }
@@ -105,6 +138,23 @@
 
   .nav-links {
     justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #323232;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  .burger-menu {
+    display: block;
   }
 }
 </style>

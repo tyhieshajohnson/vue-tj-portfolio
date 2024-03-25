@@ -1,17 +1,17 @@
 <template>
   <div>
     <!-- Body -->
-    <div class="body" style="padding: 100px;" vh-100 w-100>
+    <div class="body" vh-100 w-100>
       <div class="about-information" id="about-information">
         <!-- About Images -->
-        <!-- Social Media Mock-up -->
         <div
           class="container text-center"
           style="border-radius: 10px; padding: 10px"
         >
           <!-- About Information -->
           <!-- Content -->
-'          <div class="about-intro row" style="padding-left: 100px">
+          '
+          <div class="about-intro row">
             <div class="profile col">
               <!-- carousel -->
               <div
@@ -51,21 +51,27 @@
                     <img
                       src="https://i.ibb.co/bv2PM5L/327965335-5888160654578546-5982643696383564344-n.jpg"
                       class="d-block w-100"
-                      alt="..." height="600px" style="border-radius: 7px;"
+                      alt="..."
+                      height="600px"
+                      style="border-radius: 7px"
                     />
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
                     <img
                       src="https://i.ibb.co/qCs5zDw/IMG-2294.jpg"
                       class="d-block w-100"
-                      alt="..." height="600px" style="border-radius: 7px;"
+                      alt="..."
+                      height="600px"
+                      style="border-radius: 7px"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
                       src="https://i.ibb.co/j345W4s/krugernationalpark-nature-hyena-giraffe-quadbiking-paintballing-archery-godswindowmpumalaga-skyview.jpg"
                       class="d-block w-100"
-                      alt="..." height="600px" style="border-radius: 7px;"
+                      alt="..."
+                      height="600px"
+                      style="border-radius: 7px"
                     />
                   </div>
                   <!-- <div class="carousel-item">
@@ -102,7 +108,7 @@
                 </button>
               </div>
             </div>
-            <div class="aboutInfo col" style="padding-left: 100px">
+            <div class="aboutInfo col">
               <h1
                 style="
                   font-family: 'Manrope', sans-serif;
@@ -119,16 +125,13 @@
                 Hello there! I'm
                 <span class="text-heading" style="color: #ffdb58"
                   >Tyhiesha Johnson</span
-                >, I am passionate about learning and the technology industry.Welcome to my digital world.<br />
+                >, I am passionate about learning and the technology
+                industry.Welcome to my digital world.<br />
               </p>
               <!-- Information -->
               <div
-                style="
-                  font-family: 'Manrope', sans-serif;
-                  display: flex;
-                  justify-content: center;
-                  color: white;
-                "
+                class="info-container"
+                style="font-family: 'Manrope', sans-serif; color: white"
               >
                 <p
                   style="
@@ -183,16 +186,14 @@
               <!-- Resume Button -->
               <div
                 id="resume-button"
-                style="padding-left: 200px; padding-top: 20px"
+               style="display: flex; width: 100%;
+               place-content: center;
+               "
               >
                 <button style="background-color: #181818">
                   <p
                     class="resume-button"
-                    style="
-                      font-family: 'Manrope', sans-serif;
-                      display: flex;
-                      justify-content: center;
-                    "
+                    style="font-family: 'Manrope', sans-serif"
                   >
                     <a
                       href="https://www.hostize.com/v/A6xPpdqQO7/resume---tyhiesha-ty-johnson-pdf"
@@ -224,13 +225,13 @@
 /* Body */
 .carousel-inner {
   box-shadow: 0 0 25px rgba(255, 254, 254, 0.5);
-  border-radius: 7px
-  /* animation: glow 2s infinite alternate; */
+  border-radius: 7px;
 }
+
 .body {
   background-color: #202020;
-  /* position: absolute; */
   z-index: 100;
+  padding: 100px;
 }
 
 /* About Information Div */
@@ -244,11 +245,19 @@
   border-radius: 24px;
   background-color: #3b3b3b;
 }
-
+.container.text-center {
+  display: flex;
+  place-content: center;
+}
 .about-intro {
   display: flex;
   justify-content: center;
-  padding-top: 13px;
+  padding-left: 100px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
 }
 
 /* Resume Button */
@@ -271,6 +280,8 @@ button {
 .resume-button p {
   font-size: 10px;
   color: #181818;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes zoomIn {
@@ -304,44 +315,65 @@ button {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
   /* Body */
   .body {
-    z-index: 0;
-  }
-
-  /* Navigation Links */
-  .nav-links {
-    margin-right: 10px;
+    padding: 20px; /* Adjust padding as needed */
   }
 
   /* About Information Div */
   #about-information {
-    width: calc(100% - 40px);
+    width: auto;
     height: auto;
-    border-radius: 0;
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px;
     background-color: #3b3b3b;
-    margin-top: 20px;
-    margin-left: 20px;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-intro {
+    /* padding: 0 auto; Adjust padding as needed */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+  place-content: center;
+  /* padding-left: 100px; */
+  /* width: 450px;
+  margin: 0 auto; */
+  }
+  .aboutInfo {
+    padding-left: 0; /* Reset padding-left */
+  }
+
+  .title-who {
+    padding-top: 20px; /* Adjust padding as needed */
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
 
   /* Resume Button */
-  button {
-    margin-left: 10px;
-  }
-
   #resume-button {
-    width: 100%;
-    padding-top: 15px;
-    padding-left: 10px;
+    height: 20px;
+    width: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .text-center {
-    border: solid lightgray 3px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 1000px;
+  /* Adjust button margin */
+  button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .resume-button p {
+    font-size: 10px;
+    color: #181818;
   }
 }
 </style>
