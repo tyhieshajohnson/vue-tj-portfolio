@@ -4,10 +4,7 @@
     <div class="body" vh-100 w-100>
       <div class="about-information" id="about-information">
         <!-- About Images -->
-        <div
-          class="container text-center"
-          style="border-radius: 10px; padding: 10px"
-        >
+        <div class="container text-center">
           <!-- About Information -->
           <!-- Content -->
           '
@@ -182,13 +179,12 @@
                     >And to become the best at what I do.</span
                   >
                 </p>
+                <p>Languages: English & Afrikaans</p>
               </div>
               <!-- Resume Button -->
               <div
                 id="resume-button"
-               style="display: flex; width: 100%;
-               place-content: center;
-               "
+                style="display: flex; width: 100%; place-content: center"
               >
                 <button style="background-color: #181818">
                   <p
@@ -226,6 +222,11 @@
 .carousel-inner {
   box-shadow: 0 0 25px rgba(255, 254, 254, 0.5);
   border-radius: 7px;
+}
+
+.text-center {
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .body {
@@ -337,9 +338,9 @@ button {
     /* text-align: center; */
     display: flex;
     flex-direction: column;
-  place-content: center;
-  /* padding-left: 100px; */
-  /* width: 450px;
+    place-content: center;
+    padding-left: 5px;
+    /* width: 450px;
   margin: 0 auto; */
   }
   .aboutInfo {
@@ -374,6 +375,10 @@ button {
   .resume-button p {
     font-size: 10px;
     color: #181818;
+  }
+
+  .carousel-inner {
+    width: 100%;
   }
 }
 </style>

@@ -206,4 +206,50 @@ form {
   padding-top: 75px;
   z-index: -1000;
 }
+
+@media screen and (max-width: 600px) {
+  .body {
+    background-color: #202020;
+    /* position: absolute; */
+    z-index: -100;
+    overflow: hidden;
+  }
+
+  .icon-2 {
+    padding-left: none;
+  }
+
+  .icon-container {
+    display: flex;
+    /* justify-content: center; */
+    place-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-left: 2px;
+    margin: 0 auto;
+    font-size: small;
+  }
+
+  .icon-container .col:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #form-container {
+    width: 300px;
+    height: 500px;
+    border-radius: 24px;
+    margin-top: 100px;
+    margin-left: 1px;
+    margin-bottom: 100px;
+    background-color: #3b3b3b;
+    margin: 0 auto;
+  }
+
+  form {
+    padding-left: 10px;
+    padding-top: 75px;
+    z-index: -1000;
+  }
+}
 </style>
