@@ -29,7 +29,7 @@ body {
 
 .card {
   position: relative;
-  width: 700px;
+  width: 600px;
   height: 400px;
   overflow: hidden;
   border-radius: 10px;

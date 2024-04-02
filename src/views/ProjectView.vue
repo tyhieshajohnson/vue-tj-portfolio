@@ -1,11 +1,14 @@
 <!-- HTML -->
 <template>
-  <div class="projects">
+  <div>
+    <h1>Projects</h1>
+    <div class="projects">
     <Projects
       v-for="project of projects"
       :key="projects.id"
       :project="project"
     />
+  </div>
   </div>
 </template>
 
@@ -36,12 +39,19 @@ export default {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
+  /* margin-right: auto;
+  margin-left: auto; */
+  justify-content: space-evenly;
   align-items: center;
-  gap: 20px;
+  gap: 0;
   padding-bottom: 60px;
   background-color: #202020;
+}
+
+h1 {
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #202020;
+  color: white;
 }
 </style>
