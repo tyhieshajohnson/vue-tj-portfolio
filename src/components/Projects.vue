@@ -1,11 +1,30 @@
 <!-- HTML -->
 <template>
-  <div class="card" style="margin-top: 100px;">
+  <!-- <div class="card" style="margin-top: 100px;">
     <img :src="project.image" alt="..." />
     <div class="info">
       <div class="name">{{ project.heading }}</div>
       <div class="description">{{ project.description }}</div>
     </div>
+  </div> -->
+  <div class="body">
+    <div class = "card">
+    <img :src="project.image" alt="">
+    <div class="card-content">
+      <h2>
+        {{ project.heading }}
+      </h2>
+      <p>
+        {{ project.description }}
+      </p>
+      <a href="#" class="button">
+        Find out more 
+        <span class="material-symbols-outlined">
+          arrow_right_alt
+        </span>
+      </a>
+    </div>
+  </div>
   </div>
 </template>
 
@@ -18,59 +37,82 @@ export default {
 
 <!-- CSS -->
 <style scoped>
-body {
+.body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .card {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  overflow: hidden;
+  width: 24rem;
+  height: 36rem;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(244, 240, 7, 0.1);
-  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: $color-primary-white;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+ 
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity .2s ease-out;
+  }
+
+  h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset .3s .3s ease-out;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  
+  p, a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity .3s ease-out;
+  }
+  
+  p {
+    inset: auto auto 80px 30px;
+  }
+  
+  a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  &:hover h2 {
+    inset: auto auto 220px 30px;
+    transition: inset .3s ease-out;
+  }
+  
+  &:hover p, &:hover a {
+    opacity: 1;
+    transition: opacity .5s .1s ease-in;
+  }
+  
+  &:hover img {
+    transition: opacity .3s ease-in;
+    opacity: 1;
+  }
+
 }
 
-.card:hover {
-  transform: translateY(-10px);
+.material-symbols-outlined {
+  vertical-align: middle;
 }
 
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.card:hover .info {
-  opacity: 1;
-}
-
-.name {
-  font-size: 1.5em;
-  margin-bottom: 5px;
-}
-
-.description {
-  font-size: 1em;
-}
 </style>

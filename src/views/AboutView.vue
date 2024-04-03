@@ -179,7 +179,7 @@
                     >And to become the best at what I do.</span
                   >
                 </p>
-                <p>Languages: English & Afrikaans</p>
+                <!-- <p>Languages: English & Afrikaans</p> -->
               </div>
               <!-- Resume Button -->
               <div
@@ -246,10 +246,12 @@
   border-radius: 24px;
   background-color: #3b3b3b;
 }
+
 .container.text-center {
   display: flex;
   place-content: center;
 }
+
 .about-intro {
   display: flex;
   justify-content: center;
@@ -344,11 +346,11 @@ button {
   margin: 0 auto; */
   }
   .aboutInfo {
-    padding-left: 0; /* Reset padding-left */
+    padding-left: 0; 
   }
 
   .title-who {
-    padding-top: 20px; /* Adjust padding as needed */
+    padding-top: 20px; 
   }
 
   .info-container {

@@ -55,6 +55,12 @@
             class="nav-link"
             style="font-family: 'Manrope', sans-serif"
             >Contact</router-link
+          > 
+          <router-link
+            to="/testimonials"
+            class="nav-link"
+            style="font-family: 'Manrope', sans-serif"
+            >Tester</router-link
           >
         </div>
         <!-- Burger Menu -->

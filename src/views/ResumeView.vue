@@ -3,6 +3,16 @@
   <div class="resume body">
     <h1>Resume</h1>
     <div class="accordion" id="accordionPanelsStayOpenExample">
+      <!-- <svg width="100" height="100" style="margin-left: 20px;">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="black"
+        stroke-width="4"
+        fill="black"
+      />
+    </svg> -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button
@@ -12,6 +22,7 @@
             data-bs-target="#panelsStayOpen-collapseOne"
             aria-expanded="true"
             aria-controls="panelsStayOpen-collapseOne"
+            style="font-family: Manrope, sans-serif"
           >
             2013 - 2017: Harold Cressy High School
           </button>
@@ -22,10 +33,10 @@
         >
           <div class="accordion-body">
             <strong>Matriculated - Bachelors Pass</strong>
-            <br>
-            I graduated Harold Cressy High in the year <strong>2017</strong>.
-            Where I studied English as my home language, Afrikaans, Life Science
-            and History as my main subjects.
+            <br />
+            I graduated from Harold Cressy High where I studied English as my
+            home language, Afrikaans, Life Science and History as my main
+            subjects.
           </div>
         </div>
       </div>
@@ -49,18 +60,21 @@
           class="accordion-collapse collapse"
         >
           <div class="accordion-body">
-            <strong>Baitul-Ansaar Child & Youth Care Centre - Student Volunteer</strong>
-            <br>
+            <strong
+              >Baitul-Ansaar Child & Youth Care Centre - Student
+              Volunteer</strong
+            >
+            <br />
             Ipsum Lorem
-            <br>
+            <br />
             <strong>Two Oceans Marathon - Aid at Hydration Station</strong>
-            <br>
+            <br />
             Ipsum Lorem
           </div>
         </div>
       </div>
 
-      <!--  -->
+      <!-- 3 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button
@@ -80,7 +94,7 @@
         >
           <div class="accordion-body">
             <strong>Bachelors of Arts - Psychology</strong>
-            <br>
+            <br />
             I graduated from the University of The Western Cape in the year
             <strong>2023</strong>. Where I triple majored in Psychology, English
             and Anthropology.
@@ -88,7 +102,7 @@
         </div>
       </div>
 
-      <!-- 3 -->
+      <!-- 4 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button
@@ -108,15 +122,15 @@
         >
           <div class="accordion-body">
             <strong>Office Assistant - Part-time</strong>
-            <br>
-            Handled numerous tasks, assisted with packaging and product
+            <br />
+            Assisted with packaging and product
             finishing, book keeping and was always flexible to assist with any
             project needing assistance.
           </div>
         </div>
       </div>
 
-      <!-- 4 -->
+      <!-- 5 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button
@@ -136,16 +150,15 @@
         >
           <div class="accordion-body">
             <strong>Retail Sales Associate - Part-time</strong>
-            <br>
-            Assisted Customers, completed sales, handled inventory and acted as
-            a brand ambassador. My time at American Swiss taught me to solve
+            <br />
+            My time at American Swiss taught me to solve
             problems swiftly with basic analytical thinking and keeping the
             customer satisfied.
           </div>
         </div>
       </div>
 
-      <!-- 5 -->
+      <!-- 6 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button
@@ -165,10 +178,10 @@
         >
           <div class="accordion-body">
             <strong>Social Media Manager - Intern</strong>
-            <br>
+            <br />
             Throughout my internship in social media management, I acquired
-            valuable skills in SEO strategies to enhance content visibility
-            and reach. Furthermore, I strengthened my teamwork abilities through
+            valuable skills in SEO strategies to enhance content visibility and
+            reach. Furthermore, I strengthened my teamwork abilities through
             collaborative projects and cultivated effective communication skills
             by working with a diverse range of individuals from various
             backgrounds and cultures.
@@ -187,7 +200,7 @@
             aria-expanded="false"
             aria-controls="panelsStayOpen-collapseSeven"
           >
-            2023 - Present: National Centre for Child Protection
+            2023 - Present: Volunteer Work
           </button>
         </h2>
         <div
@@ -195,8 +208,8 @@
           class="accordion-collapse collapse"
         >
           <div class="accordion-body">
-            <strong>Student Counsellor</strong>
-            <br>
+            <strong>National Centre for Child Protection - Student Counsellor</strong>
+            <br />
             Ipsum Lorem
           </div>
         </div>
@@ -222,12 +235,21 @@
         >
           <div class="accordion-body">
             <strong>Full Stack Developer - Certificate</strong>
-            <br>
+            <br />
             Ipsum Lorem
           </div>
         </div>
       </div>
-
+      <!-- <svg width="100" height="100" style="margin-left: 1200px">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="black"
+        stroke-width="4"
+        fill="black"
+      />
+    </svg> -->
     </div>
   </div>
 </template>
@@ -261,32 +283,68 @@ export default {
 <style scoped>
 .body {
   background-color: #202020;
+  z-index: 100;
+  padding: 100px;
 }
 
-.accordion {
-  width: 1000px;
-  margin: 0 auto;
+/* accordion */
+.accordion-item {
+  width: 1100px;
   margin-bottom: 0 auto;
-  background-color: #202020;
+  background-color: white;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+#accordionPanelsStayOpenExample.accordion {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+/* background grey */
+#accordionPanelsStayOpenExample {
+  background-color: #3b3b3b;
+  border-radius: 24px;
+  width: 1307px;
+  height: 800px;
+  margin: 0 auto;
 }
 
 .accordion-button {
   background-color: #202020;
-  color:#ffdb58;
+  color: #ffdb58;
   font-weight: 900;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
+}
+
+button {
+  color: #ffdb58;
 }
 
 .accordion-item {
   background-color: #202020;
   color: white;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 h1 {
-  margin-bottom: 0;
   text-align: center;
-  background-color: #202020;
   color: white;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+svg {
+  animation: fadeInOut 4.4s infinite;
 }
 </style>
