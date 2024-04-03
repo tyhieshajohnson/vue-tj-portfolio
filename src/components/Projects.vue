@@ -1,12 +1,5 @@
 <!-- HTML -->
 <template>
-  <!-- <div class="card" style="margin-top: 100px;">
-    <img :src="project.image" alt="..." />
-    <div class="info">
-      <div class="name">{{ project.heading }}</div>
-      <div class="description">{{ project.description }}</div>
-    </div>
-  </div> -->
   <div class="body">
     <div class = "card">
     <img :src="project.image" alt="">
