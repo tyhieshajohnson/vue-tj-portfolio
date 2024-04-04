@@ -340,7 +340,7 @@ button {
     place-content: center;
     padding-left: 5px;
     /* width: 450px;
-  margin: 0 auto; */
+    margin: 0 auto; */
   }
   .aboutInfo {
     padding-left: 0;

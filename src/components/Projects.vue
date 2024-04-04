@@ -10,6 +10,7 @@
         <p>
           {{ project.description }}
         </p>
+
         <a
           target="_blank"
           :href="project.deploy"
@@ -70,7 +71,7 @@ export default {
     transition: opacity 0.2s ease-out;
   }
 
-  h2 {
+  /* h2 {
     position: absolute;
     inset: auto auto 30px 30px;
     margin: 0;
@@ -79,7 +80,7 @@ export default {
     font-weight: normal;
     text-transform: uppercase;
     color: black;
-  }
+  } */
 
   p,
   a {
@@ -124,5 +125,48 @@ export default {
 
 .material-symbols-outlined {
   vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 15rem;
+    height: 36rem;
+    border-radius: 24px;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    box-shadow: 10px 10px 10px grey;
+
+    /* h2 {
+      position: absolute;
+      inset: auto auto 30px 30px;
+      margin: 0;
+      transition: inset 0.3s 0.3s ease-out;
+      font-family: "Manrope", sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: black;
+    } */
+
+    h2 {
+      font-family: "Manrope", sans-serif;
+      margin-top: 10px;
+    }
+
+    p,
+    a {
+      position: absolute;
+      opacity: 10;
+      max-width: 80%;
+      transition: opacity 0.3s ease-out;
+      font-family: "Manrope", sans-serif;
+      color: black;
+      font-weight: 100;
+      font-size: smaller;
+      display: none;
+    }
+  }
 }
 </style>
