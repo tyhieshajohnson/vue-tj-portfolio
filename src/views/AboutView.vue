@@ -7,13 +7,13 @@
         <div class="container text-center">
           <!-- About Information -->
           <!-- Content -->
-          '
           <div class="about-intro row">
             <div class="profile col">
               <!-- carousel -->
               <div
                 id="carouselExampleDark"
-                class="carousel carousel-dark slide"
+                class="carousel carousel- slide"
+                style="margin-top: 60px"
               >
                 <div class="carousel-indicators">
                   <button
@@ -71,13 +71,6 @@
                       style="border-radius: 7px"
                     />
                   </div>
-                  <!-- <div class="carousel-item">
-                    <img
-                      src="https://i.ibb.co/47559Zt/IMG-4179.jpg"
-                      class="d-block w-100"
-                      alt="..." height="700px"
-                    />
-                  </div> -->
                 </div>
                 <button
                   class="carousel-control-prev"
@@ -122,8 +115,9 @@
                 Hello there! I'm
                 <span class="text-heading" style="color: #ffdb58"
                   >Tyhiesha Johnson</span
-                >, I am passionate about learning and the technology
-                industry.Welcome to my digital world.<br />
+                >, I am a 24 year old individual who is passionate about
+                learning and the technology industry.Welcome to my digital
+                world.<br />
               </p>
               <!-- Information -->
               <div
@@ -186,7 +180,7 @@
                 id="resume-button"
                 style="display: flex; width: 100%; place-content: center"
               >
-                <button style="background-color: #181818">
+                <button style="background-color: #ffdb58">
                   <p
                     class="resume-button"
                     style="font-family: 'Manrope', sans-serif"
@@ -200,7 +194,7 @@
                         font-size: smaller;
                       "
                       download
-                      >RESUME</a
+                      >CV</a
                     >
                   </p>
                 </button>
@@ -274,17 +268,20 @@ button {
 }
 
 #resume-button {
-  height: 64px;
-  width: 400px;
+  height: 50px;
+  width: 500px;
   padding-top: 20px;
-  /* padding-left: 1000px; */
 }
 
 .resume-button p {
   font-size: 10px;
-  color: #181818;
+  color: white;
   display: flex;
   justify-content: center;
+}
+
+.resume-button {
+  background-color: #ffdb58;
 }
 
 @keyframes zoomIn {
@@ -346,11 +343,11 @@ button {
   margin: 0 auto; */
   }
   .aboutInfo {
-    padding-left: 0; 
+    padding-left: 0;
   }
 
   .title-who {
-    padding-top: 20px; 
+    padding-top: 20px;
   }
 
   .info-container {
@@ -380,7 +377,7 @@ button {
   }
 
   .carousel-inner {
-    width: 100%;
+    width: 120%;
   }
 }
 </style>

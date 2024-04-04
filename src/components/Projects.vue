@@ -1,23 +1,32 @@
 <!-- HTML -->
 <template>
   <div class="body">
-    <div class = "card">
-    <img :src="project.image" alt="">
-    <div class="card-content">
-      <h2>
-        {{ project.heading }}
-      </h2>
-      <p>
-        {{ project.description }}
-      </p>
-      <a href="#" class="button">
-        Find out more 
-        <span class="material-symbols-outlined">
-          arrow_right_alt
-        </span>
-      </a>
+    <div class="card">
+      <img :src="project.image" alt="" />
+      <div class="card-content">
+        <h2>
+          {{ project.heading }}
+        </h2>
+        <p>
+          {{ project.description }}
+        </p>
+        <a
+          target="_blank"
+          :href="project.deploy"
+          class="material-symbols-outlined button"
+        >
+          Netlify
+        </a>
+        <a
+          target="_blank"
+          :href="project.github"
+          class="material-symbols-outlined button"
+          style="margin-left: 100px"
+        >
+          Github
+        </a>
+      </div>
     </div>
-  </div>
   </div>
 </template>
 
@@ -36,19 +45,20 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Mansrope", sans-serif;
 }
 
 .card {
-  width: 24rem;
+  width: 30rem;
   height: 36rem;
-  border-radius: 10px;
+  border-radius: 24px;
+  border: none;
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  color: $color-primary-white;
-  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
- 
+  color: black;
+  box-shadow: 10px 10px 10px grey;
+
   img {
     position: absolute;
     object-fit: cover;
@@ -56,56 +66,63 @@ export default {
     height: 100%;
     top: 0;
     left: 0;
-    opacity: 0.9;
-    transition: opacity .2s ease-out;
+    opacity: 10;
+    transition: opacity 0.2s ease-out;
   }
 
   h2 {
     position: absolute;
     inset: auto auto 30px 30px;
     margin: 0;
-    transition: inset .3s .3s ease-out;
-    font-family: 'Roboto Condensed', sans-serif;
+    transition: inset 0.3s 0.3s ease-out;
+    font-family: "Manrope", sans-serif;
     font-weight: normal;
     text-transform: uppercase;
+    color: black;
   }
-  
-  p, a {
+
+  p,
+  a {
     position: absolute;
-    opacity: 0;
+    opacity: 10;
     max-width: 80%;
-    transition: opacity .3s ease-out;
+    transition: opacity 0.3s ease-out;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 900;
+    font-size: smaller;
+    display: none;
   }
-  
+
   p {
     inset: auto auto 80px 30px;
   }
-  
+
   a {
     inset: auto auto 40px 30px;
     color: inherit;
     text-decoration: none;
   }
-  
+
   &:hover h2 {
     inset: auto auto 220px 30px;
-    transition: inset .3s ease-out;
-  }
-  
-  &:hover p, &:hover a {
-    opacity: 1;
-    transition: opacity .5s .1s ease-in;
-  }
-  
-  &:hover img {
-    transition: opacity .3s ease-in;
-    opacity: 1;
+    transition: inset 0.3s ease-out;
   }
 
+  &:hover p,
+  &:hover a {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+    display: block;
+  }
+
+  &:hover img {
+    transition: opacity 0.3s ease-in;
+    opacity: 0.2;
+  }
 }
 
 .material-symbols-outlined {
   vertical-align: middle;
 }
-
 </style>

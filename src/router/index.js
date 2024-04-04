@@ -5,7 +5,6 @@ import ProjectView from '../views/ProjectView.vue'
 import ResumeView from '../views/ResumeView.vue'
 import TestimonialView from '../views/TestimonialView.vue'
 import ContactView from '../views/ContactView.vue'
-import Testimonials from '../views/Testimonials.vue'
 
 const routes = [
   {
@@ -37,11 +36,6 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component:ContactView
-  },
-  {
-    path: '/testimonials',
-    name: 'testimonials',
-    component:Testimonials
   },
 ]
 

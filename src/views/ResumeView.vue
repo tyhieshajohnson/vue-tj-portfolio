@@ -1,159 +1,90 @@
 <!-- HTML -->
 <template>
   <div class="resume body">
-    <h1>Resume</h1>
+    <h1>Experience & Education</h1>
     <div class="accordion" id="accordionPanelsStayOpenExample">
-      <!-- <svg width="100" height="100" style="margin-left: 20px;">
-      <circle
-        cx="50"
-        cy="50"
-        r="40"
-        stroke="black"
-        stroke-width="4"
-        fill="black"
-      />
-    </svg> -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseOne"
-            aria-expanded="true"
-            aria-controls="panelsStayOpen-collapseOne"
-            style="font-family: Manrope, sans-serif"
-          >
-            2013 - 2017: Harold Cressy High School
-          </button>
-        </h2>
-        <div
-          id="panelsStayOpen-collapseOne"
-          class="accordion-collapse collapse show"
-        >
-          <div class="accordion-body">
-            <strong>Matriculated - Bachelors Pass</strong>
-            <br />
-            I graduated from Harold Cressy High where I studied English as my
-            home language, Afrikaans, Life Science and History as my main
-            subjects.
-          </div>
-        </div>
-      </div>
-
-      <!-- 2 -->
+      <!-- 9 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button
             class="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseTwo"
+            data-bs-target="#panelsStayOpen-collapseNine"
             aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseTwo"
+            aria-controls="panelsStayOpen-collapseNine"
           >
-            2017: Volunteer Work
+            2024 - Present: LC Studio
           </button>
         </h2>
         <div
-          id="panelsStayOpen-collapseTwo"
+          id="panelsStayOpen-collapseNine"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">
+            <strong>Cybersecurity - Intern</strong>
+            <br />
+            Currently completing my learning journey with Cisco in Cybersecurity
+            and gaining work ready training.
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseEight"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseEight"
+          >
+            2023 - 2024: Life Choices Academy
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseEight"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">
+            <strong>Full Stack Developer - Certificate</strong>
+            <br />
+            Completed a 6-month course in Digital Marketing, MySQL, Bootstrap
+            (Framework), HTML5, Cascading Style Sheets (CSS), GitHub, Responsive
+            Web Design, Git, Back-End Web Development, Figma (Software),
+            Front-End Development, JavaScript and Vue.js.
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseSeven"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseSeven"
+          >
+            2023 - Present: Volunteer Work
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseSeven"
           class="accordion-collapse collapse"
         >
           <div class="accordion-body">
             <strong
-              >Baitul-Ansaar Child & Youth Care Centre - Student
-              Volunteer</strong
+              >National Centre for Child Protection - Student Counsellor</strong
             >
             <br />
-            Ipsum Lorem
-            <br />
-            <strong>Two Oceans Marathon - Aid at Hydration Station</strong>
-            <br />
-            Ipsum Lorem
-          </div>
-        </div>
-      </div>
-
-      <!-- 3 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseThree"
-            aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseThree"
-          >
-            2018 - 2023: Tertiary Education
-          </button>
-        </h2>
-        <div
-          id="panelsStayOpen-collapseThree"
-          class="accordion-collapse collapse"
-        >
-          <div class="accordion-body">
-            <strong>Bachelors of Arts - Psychology</strong>
-            <br />
-            I graduated from the University of The Western Cape in the year
-            <strong>2023</strong>. Where I triple majored in Psychology, English
-            and Anthropology.
-          </div>
-        </div>
-      </div>
-
-      <!-- 4 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseFour"
-            aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseFour"
-          >
-            2018 - 2020: Georgen Office
-          </button>
-        </h2>
-        <div
-          id="panelsStayOpen-collapseFour"
-          class="accordion-collapse collapse"
-        >
-          <div class="accordion-body">
-            <strong>Office Assistant - Part-time</strong>
-            <br />
-            Assisted with packaging and product
-            finishing, book keeping and was always flexible to assist with any
-            project needing assistance.
-          </div>
-        </div>
-      </div>
-
-      <!-- 5 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseFive"
-            aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseFive"
-          >
-            2020: American Swiss Jewelers
-          </button>
-        </h2>
-        <div
-          id="panelsStayOpen-collapseFive"
-          class="accordion-collapse collapse"
-        >
-          <div class="accordion-body">
-            <strong>Retail Sales Associate - Part-time</strong>
-            <br />
-            My time at American Swiss taught me to solve
-            problems swiftly with basic analytical thinking and keeping the
-            customer satisfied.
+            As a student counselor, I am dedicated to providing compassionate
+            support and guidance to empower people facing various challenges and
+            to advocate for their safety and well-being.
           </div>
         </div>
       </div>
@@ -189,67 +120,168 @@
         </div>
       </div>
 
-      <!-- 7 -->
+      <!-- 5 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button
             class="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseSeven"
+            data-bs-target="#panelsStayOpen-collapseFive"
             aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseSeven"
+            aria-controls="panelsStayOpen-collapseFive"
           >
-            2023 - Present: Volunteer Work
+            2020: American Swiss Jewelers
           </button>
         </h2>
         <div
-          id="panelsStayOpen-collapseSeven"
+          id="panelsStayOpen-collapseFive"
           class="accordion-collapse collapse"
         >
           <div class="accordion-body">
-            <strong>National Centre for Child Protection - Student Counsellor</strong>
+            <strong>Retail Sales Associate - Part-time</strong>
             <br />
-            Ipsum Lorem
+            My time at American Swiss taught me to solve problems swiftly with
+            basic analytical thinking and keeping the customer satisfied.
           </div>
         </div>
       </div>
 
-      <!-- 8 -->
+      <!-- 4 -->
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button
             class="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseEight"
+            data-bs-target="#panelsStayOpen-collapseFour"
             aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseEight"
+            aria-controls="panelsStayOpen-collapseFour"
           >
-            2023 - 2024: Life Choices Academy
+            2018 - 2020: Georgen Office
           </button>
         </h2>
         <div
-          id="panelsStayOpen-collapseEight"
+          id="panelsStayOpen-collapseFour"
           class="accordion-collapse collapse"
         >
           <div class="accordion-body">
-            <strong>Full Stack Developer - Certificate</strong>
+            <strong>Office Assistant - Part-time</strong>
             <br />
-            Ipsum Lorem
+            Assisted with packaging and product finishing, book keeping and was
+            always flexible to assist with any project needing assistance.
           </div>
         </div>
       </div>
-      <!-- <svg width="100" height="100" style="margin-left: 1200px">
-      <circle
-        cx="50"
-        cy="50"
-        r="40"
-        stroke="black"
-        stroke-width="4"
-        fill="black"
-      />
-    </svg> -->
+
+      <!-- 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree"
+          >
+            2018 - 2023: Tertiary Education
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseThree"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">
+            <strong>Bachelors of Arts - Psychology</strong>
+            <br />
+            I graduated from the University of The Western Cape in the year
+            <strong>2023</strong>. Where I triple majored in Psychology, English
+            and Anthropology.
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo"
+          >
+            2017: Volunteer Work
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseTwo"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">
+            <strong
+              >Baitul-Ansaar Child & Youth Care Centre - Student
+              Volunteer</strong
+            >
+            <br />
+            As a student counselor at a children's orphanage, my role is to
+            offer emotional support, foster resilience, and create a nurturing
+            environment where each child feels valued and supported on their
+            journey towards healing and self-discovery.
+          </div>
+        </div>
+      </div>
+
+      <!-- 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne"
+            aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne"
+            style="font-family: Manrope, sans-serif"
+          >
+            2013 - 2017: Harold Cressy High School
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseOne"
+          class="accordion-collapse collapse show"
+        >
+          <div class="accordion-body">
+            <strong>Matriculated - Bachelors Pass</strong>
+            <br />
+            I graduated from Harold Cressy High where I studied English as my
+            home language, Afrikaans, Life Science and History as my main
+            subjects.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <h1 style="margin-top: 20px">Skills</h1>
+    <div class="skills-container">
+      <div class="soft-skills">
+        <h1>Soft Skills</h1>
+        <p>
+          Problem Solver, Listening & Communication Skills, Updated on Industry
+          Trends, Team Player and Analytical Skills
+        </p>
+      </div>
+
+      <div class="tech-skills">
+        <h1>Technical Skills</h1>
+        <p>
+          HTML-5, Javascript & CSS, Digital Marketing, UI/UX, Github & Git,
+          Figma, Bootstrap Framework, Vue.js Framework and Web Design
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -309,6 +341,7 @@ export default {
   width: 1307px;
   height: 800px;
   margin: 0 auto;
+  box-shadow: 10px 10px 5px #ffdb58;
 }
 
 .accordion-button {
@@ -346,5 +379,44 @@ h1 {
 
 svg {
   animation: fadeInOut 4.4s infinite;
+}
+
+p {
+  color: #ffdb58;
+  font-family: "Manrope", sans-serif;
+}
+
+.skills-container {
+  display: flex;
+  place-content: center space-evenly;
+  gap: 25px;
+  margin-left: 35px;
+  transform: translateY(0);
+  transition: transform 0.5s;
+}
+
+.soft-skills,
+.tech-skills {
+  border: 1px solid #3b3b3b;
+  border-radius: 24px;
+  background-color: #3b3b3b;
+  margin: 0 auto;
+  width: 653.5px;
+  height: 150px;
+  padding: 20px;
+  box-shadow: 10px 10px 5px #ffdb58;
+}
+
+.soft-skills:hover,
+.tech-skills:hover {
+  transform: translateY(-20px);
+  box-shadow: 10px 10px 5px grey;
+}
+
+.soft-skills p,
+.tech-skills p {
+  color: #ffdb58;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
 }
 </style>

@@ -1,14 +1,24 @@
 <!-- HTML -->
 <template>
   <div>
-    <h1>Projects</h1>
+    <h1
+      style="
+        font-family: 'Manrope', sans-serif;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        color: white;
+      "
+    >
+      Projects
+    </h1>
     <div class="projects">
-    <Projects
-      v-for="project of projects"
-      :key="projects.id"
-      :project="project"
-    />
-  </div>
+      <Projects
+        v-for="project of projects"
+        :key="projects.id"
+        :project="project"
+      />
+    </div>
   </div>
 </template>
 
@@ -39,8 +49,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  /* margin-right: auto;
-  margin-left: auto; */
   justify-content: space-evenly;
   align-items: center;
   gap: 0;

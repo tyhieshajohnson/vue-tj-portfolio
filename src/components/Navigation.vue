@@ -2,7 +2,7 @@
 <template>
   <!-- Bootstrap Navigation Bar -->
   <!-- Main Navigation Container -->
-  <div class="nav-container" style="background-color: #323232;">
+  <div class="nav-container" style="background-color: #323232">
     <nav class="navbar">
       <div class="container-fluid">
         <router-link to="/" class="nav-link">
@@ -42,25 +42,19 @@
             to="/resume"
             class="nav-link"
             style="font-family: 'Manrope', sans-serif"
-            >Resume</router-link
+            >Experience</router-link
           >
           <router-link
             to="/testimonial"
             class="nav-link"
             style="font-family: 'Manrope', sans-serif"
-            >Testimonial</router-link
+            >References</router-link
           >
           <router-link
             to="/contact"
             class="nav-link"
             style="font-family: 'Manrope', sans-serif"
             >Contact</router-link
-          > 
-          <router-link
-            to="/testimonials"
-            class="nav-link"
-            style="font-family: 'Manrope', sans-serif"
-            >Tester</router-link
           >
         </div>
         <!-- Burger Menu -->
@@ -78,10 +72,10 @@
 export default {
   methods: {
     toggleMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      navLinks.classList.toggle('active');
-    }
-  }
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle("active");
+    },
+  },
 };
 </script>
 

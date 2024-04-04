@@ -152,9 +152,9 @@
           </div>
         </div>
         <button
-          class="btn btn-dark"
+          class="btn btn-"
           type="submit"
-          style="font-family: 'Manrope', sans-serif"
+          style="font-family: 'Manrope', sans-serif; background-color: #ffdb58;"
         >
           Submit form
         </button>
@@ -171,7 +171,6 @@
 <style scoped>
 .body {
   background-color: #202020;
-  /* position: absolute; */
   z-index: -100;
   overflow: hidden;
 }
@@ -199,12 +198,24 @@
   margin-left: 500px;
   margin-bottom: 100px;
   background-color: #3b3b3b;
+  box-shadow: 10px 10px 5px #ffdb58;
 }
 
 form {
-  padding-left: 200px;
-  padding-top: 75px;
+  width: 100%;
   z-index: -1000;
+  color: white;
+  /* padding: 100px; */
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-left: 120px;
+  padding-right: 90px;
+  padding-top: 59px;
+}
+
+input, .btn {
+  width: 300px;
 }
 
 @media screen and (max-width: 600px) {

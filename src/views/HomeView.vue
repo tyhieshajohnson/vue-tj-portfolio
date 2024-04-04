@@ -52,7 +52,7 @@
         </svg>
       </div>
       <!-- Home Image -->
-      <div id="home-image">
+      <div id="home-image" class="mobile-home">
         <img
           src="https://i.ibb.co/2c2zBSc/1690957765595-bw.jpg"
           alt=""
@@ -121,7 +121,7 @@ svg {
   height: 400px;
   /* margin-right: 50px; */
   margin-top: 50px;
-  box-shadow: 0 0 10px rgba(255, 254, 254, 0.5);
+  box-shadow: 0 0 10px rgba(254, 246, 15, 0.817);
   animation: glow 2s infinite alternate;
 }
 
@@ -197,6 +197,7 @@ img {
     margin: 0 auto;
     margin-top: 5px;
     font-size: small;
+    width: 350px;
   }
 
   .home-description {
@@ -216,6 +217,7 @@ img {
     display: flex;
     justify-content: center;
   }
+
   #home-image {
     display: none;
   }

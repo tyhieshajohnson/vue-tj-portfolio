@@ -17,20 +17,15 @@
           class="icon-container"
           style="padding-top: 15px; padding-right: 100px"
         >
-          <a href="https://api.whatsapp.com/send?phone=27760775241"
-            ><i class="fa-brands fa-whatsapp" style="color: #ffdb58"></i
-          ></a>
+          <a target="_blank" href="mailto:johnsontyhiesha@gmail.com"
+            ><i class="fa-solid fa-envelope" style="color: #ffdb58"></i></a>
 
-          <a href="https://www.linkedin.com/in/tyhieshajohnson/"
+          <a target="_blank" href="https://www.linkedin.com/in/tyhieshajohnson/"
             ><i class="fa-brands fa-linkedin" style="color: #ffdb58"></i
           ></a>
 
-          <a href="https://github.com/tyhieshajohnson/"
+          <a target="_blank" href="https://github.com/tyhieshajohnson/"
             ><i class="fa-brands fa-github" style="color: #ffdb58"></i
-          ></a>
-
-          <a href="https://www.instagram.com/gold4n.ace/"
-            ><i class="fa-brands fa-instagram" style="color: #ffdb58"></i
           ></a>
         </div>
       </div>
