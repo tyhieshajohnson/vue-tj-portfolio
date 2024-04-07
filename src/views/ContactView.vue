@@ -215,7 +215,7 @@ form {
 }
 
 input, .btn {
-  width: 300px;
+  width: 280px;
 }
 
 @media screen and (max-width: 600px) {
