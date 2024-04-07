@@ -226,7 +226,7 @@
 .body {
   background-color: #202020;
   z-index: 100;
-  padding: 100px;
+  padding: 25px;
 }
 
 /* About Information Div */
@@ -235,8 +235,9 @@
 }
 
 #about-information {
-  width: 1307px;
+  width: 1100px;
   height: 750px;
+  margin: 0 auto;
   border-radius: 24px;
   background-color: #3b3b3b;
 }
@@ -377,7 +378,10 @@ button {
   }
 
   .carousel-inner {
-    width: 120%;
+    width: 450px;
+  }
+  .carousel-item {
+    width: 450px;
   }
 }
 </style>
