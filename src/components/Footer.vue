@@ -42,6 +42,9 @@
 .footer-content {
   border-top: solid 1px #696969;
   background-color: #323232;
+  position: relative;
+  bottom: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
 }
