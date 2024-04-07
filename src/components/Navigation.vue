@@ -97,7 +97,12 @@ export default {
 }
 .nav-container {
   height: 80px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
+
 .nav-links {
   display: flex;
   width: 500px;
@@ -143,6 +148,7 @@ export default {
   .nav-links {
     display: none;
     position: absolute;
+    z-index: 2;
     top: 100%;
     left: 0;
     width: 100%;
