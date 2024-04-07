@@ -184,25 +184,22 @@ img {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 600px) {
-  .body {
-    background-color: #202020;
+  div.vh-100.h-100.body {
+    height: 500px;
   }
-  /* Home Content */
-  /* Alignment */
+
   #home-container {
-    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    place-content: center;
   }
 
   #home-information {
     margin: 0 auto;
-    margin-top: 5px;
     font-size: small;
-    width: 350px;
   }
 
   .home-description {
-    font-family: "Manrope", sans-serif;
-    color: #dedede;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,5 +222,31 @@ img {
   svg {
     display: none;
   }
+
+#home-information {
+  float: inline-start;
+  margin: 0;
+}
+
+#home-image {
+  margin: 0;
+}
+
+/* Image Size and Border */
+.home-image {
+  margin: 0;
+}
+
+.home-description {
+  margin: 0;
+}
+
+button {
+  margin-left: 0;
+}
+
+#home-button {
+  margin-left: 0;
+}
 }
 </style>
