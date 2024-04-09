@@ -33,7 +33,7 @@
         <!-- <i class="fa-solid fa-map-pin" style="color: #ffdb58"></i> -->
         <p style="font-family: 'Manrope', sans-serif; color: white">
           <i class="fa-solid fa-map-pin" style="color: #ffdb58"></i>
-          71 Bietou Rd, Cape Town, 7785
+          Mitchell's Plain, Cape Town, 7785
         </p>
       </div>
       <!-- Phone Number -->
