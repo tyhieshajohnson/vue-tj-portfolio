@@ -186,7 +186,7 @@
                     style="font-family: 'Manrope', sans-serif"
                   >
                     <a
-                      href="https://www.hostize.com/v/A6xPpdqQO7/resume---tyhiesha-ty-johnson-pdf"
+                      href="file:///C:/Users/Intern-05/Downloads/Resume%20-%20Tyhiesha%20(Ty)%20Johnson.pdf" :download="TyhieshaJohnson.pdf" target="_blank"
                       style="
                         text-decoration: none;
                         color: #ffffff;
