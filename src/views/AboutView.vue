@@ -180,23 +180,27 @@
                 id="resume-button"
                 style="display: flex; width: 100%; place-content: center"
               >
-                <button style="background-color: #ffdb58">
-                  <p
-                    class="resume-button"
-                    style="font-family: 'Manrope', sans-serif"
+                <a
+                  href="/src/CV/Resume - Tyhiesha (Ty) Johnson.pdf.pdf"
+                  download="TyhieshaJohnson.pdf"
+                  target="_blank"
+                  style="
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-family: 'Manrope', sans-serif;
+                  "
+                >
+                  <button
+                    style="
+                      background-color: #ffdb58;
+                      border: none;
+                      padding: 10px;
+                      font-size: smaller;
+                    "
                   >
-                    <a
-                      href="file:///C:/Users/Intern-05/Downloads/Resume%20-%20Tyhiesha%20(Ty)%20Johnson.pdf.pdf" download="TyhieshaJohnson.pdf" target="_blank"
-                      style="
-                        text-decoration: none;
-                        color: #ffffff;
-                        padding-top: 11px;
-                        font-size: smaller;
-                      "
-                      >CV</a
-                    >
-                  </p>
-                </button>
+                    CV
+                  </button>
+                </a>
               </div>
             </div>
           </div>
