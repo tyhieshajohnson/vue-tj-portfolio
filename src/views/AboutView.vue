@@ -274,7 +274,7 @@ button {
 #resume-button {
   height: 50px;
   width: 500px;
-  padding-top: 7px;
+  padding-top: 5px;
 }
 
 .resume-button p {
