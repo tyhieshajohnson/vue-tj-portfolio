@@ -186,14 +186,13 @@
                     style="font-family: 'Manrope', sans-serif"
                   >
                     <a
-                      href="file:///C:/Users/Intern-05/Downloads/Resume%20-%20Tyhiesha%20(Ty)%20Johnson.pdf.pdf" :download="TyhieshaJohnson.pdf" target="_blank"
+                      href="file:///C:/Users/Intern-05/Downloads/Resume%20-%20Tyhiesha%20(Ty)%20Johnson.pdf.pdf" download="TyhieshaJohnson.pdf" target="_blank"
                       style="
                         text-decoration: none;
                         color: #ffffff;
                         padding-top: 11px;
                         font-size: smaller;
                       "
-                      download
                       >CV</a
                     >
                   </p>
