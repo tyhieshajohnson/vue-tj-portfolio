@@ -181,7 +181,7 @@
                 style="display: flex; width: 100%; place-content: center"
               >
                 <a
-                  href="/public/CV/Resume - Tyhiesha (Ty) Johnson.pdf.pdf"
+                  href="https://green-dita-4.tiiny.site/"
                   download="TyhieshaJohnson.pdf"
                   target="_blank"
                   style="
