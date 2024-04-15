@@ -181,7 +181,7 @@
                 style="display: flex; width: 100%; place-content: center"
               >
                 <a
-                  href="/src/CV/Resume - Tyhiesha (Ty) Johnson.pdf.pdf"
+                  href="/public/CV/Resume - Tyhiesha (Ty) Johnson.pdf.pdf"
                   download="TyhieshaJohnson.pdf"
                   target="_blank"
                   style="
