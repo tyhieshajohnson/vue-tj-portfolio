@@ -491,4 +491,30 @@ h1 {
   font-size: 12px;
 }
 }
+
+@media screen and (max-width: 480px) {
+  .skills-container {
+  display: flex;
+  place-content: center space-evenly;
+  gap: 25px;
+  margin: 0 auto;
+}
+
+.soft-skills,
+.tech-skills {
+  width: 653.5px;
+  height: 225px;
+  padding: 10px;
+}
+
+.soft-skills:hover,
+.tech-skills:hover {
+  transform: translateY(-20px);
+}
+
+.soft-skills p,
+.tech-skills p {
+  font-size: 12px;
+}
+}
 </style>
