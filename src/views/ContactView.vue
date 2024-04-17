@@ -48,8 +48,8 @@
       <div class="icon-3 col">
         <!-- <i class="fa-solid fa-paper-plane" style="color: #ffdb58"></i> -->
         <p style="font-family: 'Manrope', sans-serif; color: white">
-          <i class="fa-solid fa-paper-plane" style="color: #ffdb58"></i>
-          johnsontyhiesha@gmail.com
+          <a style="text-decoration: none; color: white;"target="_blank" href="mailto:johnsontyhiesha@gmail.com"><i class="fa-solid fa-paper-plane" style="color: #ffdb58"></i>
+          johnsontyhiesha@gmail.com</a>
         </p>
       </div>
     </div>
@@ -59,7 +59,7 @@
         class="needs-validation contactForm"
         id="contactForm"
         novalidate
-        action="https://formspree.io/f/xnqkenro"
+        action="https://formspree.io/f/xnqkenro" target="_blank"
         method="POST"
       >
         <div class="form-row">
@@ -154,7 +154,7 @@
         <button
           class="btn btn-"
           type="submit"
-          style="font-family: 'Manrope', sans-serif; background-color: #ffdb58;"
+          style="font-family: 'Manrope', sans-serif; background-color: #ffdb58"
         >
           Submit form
         </button>
@@ -214,7 +214,8 @@ form {
   padding-top: 59px;
 }
 
-input, .btn {
+input,
+.btn {
   width: 280px;
 }
 
@@ -261,6 +262,14 @@ input, .btn {
     padding-left: 10px;
     padding-top: 75px;
     z-index: -1000;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  #form-container {
+    margin-top: 50px;
+    margin-bottom: 90px;
   }
 }
 </style>
