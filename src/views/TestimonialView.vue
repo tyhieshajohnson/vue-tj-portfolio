@@ -7,6 +7,7 @@
       padding-top: 50px;
       color: white;
     "
+    class="test-head"
   >
     References and Peer Reviews
   </h1>
@@ -60,7 +61,7 @@ export default {
 .testimonial-container {
   display: flex;
   flex-wrap: wrap;
-  width: 80%%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
@@ -73,5 +74,22 @@ h1 {
   text-align: center;
   background-color: #202020;
   color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .test-head {
+    font-size: 20px;
+  }
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 }
 </style>
