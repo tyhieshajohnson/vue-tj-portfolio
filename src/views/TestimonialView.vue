@@ -1,5 +1,6 @@
 <template>
-  <h1
+  
+  <div class="testimonial"><h1
     style="
       font-family: 'Manrope', sans-serif;
       display: flex;
@@ -11,7 +12,6 @@
   >
     References and Peer Reviews
   </h1>
-  <div class="testimonial">
     <div class="testimonial-container">
       <Testimonial
         v-for="testimonial of testimonial"

@@ -272,4 +272,22 @@ input,
     margin-bottom: 90px;
   }
 }
+
+/* Laptop */
+@media screen and (max-width: 480px) {
+   #form-container {
+    width: 300px;
+    height: 500px;
+    border-radius: 24px;
+    margin-top: 100px;
+    margin-left: 1px;
+    margin-bottom: 100px;
+    background-color: #3b3b3b;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  
+}
 </style>

@@ -268,4 +268,28 @@ img {
     overflow: hidden;
   }
 }
+/* Mobile */
+@media screen and (max-width: 480px) {
+  /* Home Page */
+  #home-description {
+    margin-top: 100px;
+  }
+
+  .home-description {
+    margin-bottom: 20px;
+    padding: 40px;
+    padding-top: 0;
+  }
+
+  #home-container {
+    overflow: hidden;
+  }
+}
+
+/* Laptop */
+@media screen and (max-width: 834px) {
+  #home-image {
+    display: none;
+  }
+}
 </style>
