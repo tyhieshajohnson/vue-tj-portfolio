@@ -17,7 +17,8 @@
         </svg>
         <h1
           style="font-family: 'Manrope', sans-serif"
-          class="home-description home-description-media" id="home-description"
+          class="home-description home-description-media"
+          id="home-description"
         >
           Hi, I am
           <span style="color: #ffdb58" class="home-description-span"
@@ -223,31 +224,31 @@ img {
     display: none;
   }
 
-#home-information {
-  float: inline-start;
-  margin: 0;
-}
+  #home-information {
+    float: inline-start;
+    margin: 0;
+  }
 
-#home-image {
-  margin: 0;
-}
+  #home-image {
+    margin: 0;
+  }
 
-/* Image Size and Border */
-.home-image {
-  margin: 0;
-}
+  /* Image Size and Border */
+  .home-image {
+    margin: 0;
+  }
 
-.home-description {
-  margin: 0;
-}
+  .home-description {
+    margin: 0;
+  }
 
-button {
-  margin-left: 0;
-}
+  button {
+    margin-left: 0;
+  }
 
-#home-button {
-  margin-left: 0;
-}
+  #home-button {
+    margin-left: 0;
+  }
 }
 
 /* Mobile */
@@ -258,12 +259,13 @@ button {
   }
 
   .home-description {
-    margin-bottom: 0;
-  }
-
-  .home-description {
+    margin-bottom: 20px;
     padding: 40px;
     padding-top: 0;
+  }
+
+  #home-container {
+    overflow: hidden;
   }
 }
 </style>
