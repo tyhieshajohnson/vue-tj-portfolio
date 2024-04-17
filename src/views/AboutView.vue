@@ -76,7 +76,7 @@
                   class="carousel-control-prev"
                   type="button"
                   data-bs-target="#carouselExampleDark"
-                  data-bs-slide="prev"
+                  data-bs-slide="prev" style="display: none;"
                 >
                   <span
                     class="carousel-control-prev-icon"
@@ -88,7 +88,7 @@
                   class="carousel-control-next"
                   type="button"
                   data-bs-target="#carouselExampleDark"
-                  data-bs-slide="next"
+                  data-bs-slide="next" style="display: none;"
                 >
                   <span
                     class="carousel-control-next-icon"
@@ -385,6 +385,78 @@ button {
   }
   .carousel-item {
     width: 450px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  /* About */
+  /* Body */
+  .body {
+    padding: 20px; /* Adjust padding as needed */
+  }
+
+  /* About Information Div */
+  #about-information {
+    width: auto;
+    height: auto;
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px;
+    background-color: #3b3b3b;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-intro {
+    /* padding: 0 auto; Adjust padding as needed */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    padding-left: 5px;
+    /* width: 450px;
+    margin: 0 auto; */
+  }
+  .aboutInfo {
+    padding-left: 0;
+  }
+
+  .title-who {
+    padding-top: 20px;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  /* Resume Button */
+  #resume-button {
+    height: 20px;
+    width: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Adjust button margin */
+  button {
+    display: flex;
+    justify-content: center;
+    margin-left: 140px;
+  }
+
+  .resume-button p {
+    font-size: 10px;
+    color: #181818;
+  }
+
+  .carousel-inner {
+    width: 310px;
+  }
+  .carousel-item {
+    width: 310px;
   }
 }
 </style>

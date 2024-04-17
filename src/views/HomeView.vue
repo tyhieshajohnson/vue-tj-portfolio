@@ -252,6 +252,7 @@ button {
 
 /* Mobile */
 @media screen and (max-width: 480px) {
+  /* Home Page */
   #home-description {
     margin-top: 100px;
   }
