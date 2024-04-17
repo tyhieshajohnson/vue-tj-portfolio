@@ -17,7 +17,7 @@
         </svg>
         <h1
           style="font-family: 'Manrope', sans-serif"
-          class="home-description home-description-media"
+          class="home-description home-description-media" id="home-description"
         >
           Hi, I am
           <span style="color: #ffdb58" class="home-description-span"
@@ -248,5 +248,21 @@ button {
 #home-button {
   margin-left: 0;
 }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  #home-description {
+    margin-top: 100px;
+  }
+
+  .home-description {
+    margin-bottom: 0;
+  }
+
+  .home-description {
+    padding: 40px;
+    padding-top: 0;
+  }
 }
 </style>
