@@ -169,4 +169,22 @@ export default {
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 18rem;
+    height: 36rem;
+    border-radius: 24px;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    box-shadow: 10px 10px 10px grey; 
+  }
+
+  .card :hover {
+    
+  }
+}
 </style>
