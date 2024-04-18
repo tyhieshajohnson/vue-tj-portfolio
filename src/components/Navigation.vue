@@ -24,37 +24,43 @@
             to="/"
             class="nav-link"
             style="font-family: 'Manrope', sans-serif"
-            @click="closeMenu">Home
+            @click="closeMenu"
+            >Home
           </router-link>
           <router-link
             to="/about"
             class="nav-link"
             style="font-family: 'Manrope', sans-serif"
-            @click="closeMenu">About</router-link
+            @click="closeMenu"
+            >About</router-link
           >
           <router-link
             to="/projects"
             class="nav-link"
             style="font-family: 'Manrope', sans-serif"
-            @click="closeMenu">Projects</router-link
+            @click="closeMenu"
+            >Projects</router-link
           >
           <router-link
             to="/resume"
             class="nav-link"
             style="font-family: 'Manrope', sans-serif"
-            @click="closeMenu">Experience</router-link
+            @click="closeMenu"
+            >Experience</router-link
           >
           <router-link
             to="/testimonial"
             class="nav-link"
             style="font-family: 'Manrope', sans-serif"
-            @click="closeMenu">References</router-link
+            @click="closeMenu"
+            >References</router-link
           >
           <router-link
             to="/contact"
             class="nav-link"
             style="font-family: 'Manrope', sans-serif"
-            @click="closeMenu">Contact</router-link
+            @click="closeMenu"
+            >Contact</router-link
           >
         </div>
         <!-- Burger Menu -->
@@ -75,10 +81,10 @@ export default {
       const navLinks = document.querySelector(".nav-links");
       navLinks.classList.toggle("active");
     },
-     closeMenu() {
+    closeMenu() {
       const navLinks = document.querySelector(".nav-links");
       navLinks.classList.remove("active");
-    }
+    },
   },
 };
 </script>
@@ -165,6 +171,10 @@ export default {
 
   .burger-menu {
     display: block;
+  }
+
+  img {
+    margin-top: 5px;
   }
 }
 </style>

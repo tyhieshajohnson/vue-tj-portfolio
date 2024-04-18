@@ -268,21 +268,17 @@ img {
     overflow: hidden;
   }
 }
-/* Mobile */
-@media screen and (max-width: 480px) {
-  /* Home Page */
+
+/* Mobile 360 */
+@media screen and (max-width: 360px) {
   #home-description {
-    margin-top: 100px;
+    margin-top: 90px;
   }
 
   .home-description {
     margin-bottom: 20px;
-    padding: 40px;
+    padding: 20px;
     padding-top: 0;
-  }
-
-  #home-container {
-    overflow: hidden;
   }
 }
 

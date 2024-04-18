@@ -183,4 +183,11 @@ export default {
     box-shadow: 10px 10px 10px grey; 
   }
 }
+
+/* Mobile 360 */
+@media screen and (max-width: 360px) {
+  .body {
+    overflow: hidden;
+  }
+}
 </style>

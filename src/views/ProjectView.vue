@@ -1,18 +1,18 @@
 <!-- HTML -->
 <template>
   <div>
-    <h1
-      style="
-        font-family: 'Manrope', sans-serif;
-        display: flex;
-        justify-content: center;
-        padding-top: 50px;
-        color: white;
-      "
-    >
-      Projects
-    </h1>
     <div class="projects">
+      <h1
+        style="
+          font-family: 'Manrope', sans-serif;
+          display: flex;
+          justify-content: center;
+          padding-top: 50px;
+          color: white;
+        "
+      >
+        Projects
+      </h1>
       <Projects
         v-for="project of projects"
         :key="projects.id"

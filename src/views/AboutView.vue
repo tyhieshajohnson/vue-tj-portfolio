@@ -393,14 +393,14 @@ button {
   /* About */
   /* Body */
   .body {
-    padding: 20px; /* Adjust padding as needed */
+    padding: 20px; 
   }
 
   /* About Information Div */
   #about-information {
     width: auto;
     height: auto;
-    padding: 20px; /* Adjust padding as needed */
+    padding: 20px; 
     border-radius: 10px;
     background-color: #3b3b3b;
     display: flex;
@@ -408,7 +408,6 @@ button {
   }
 
   .about-intro {
-    /* padding: 0 auto; Adjust padding as needed */
     /* text-align: center; */
     display: flex;
     flex-direction: column;
@@ -417,6 +416,7 @@ button {
     /* width: 450px;
     margin: 0 auto; */
   }
+
   .aboutInfo {
     padding-left: 0;
   }
@@ -457,6 +457,23 @@ button {
   }
   .carousel-item {
     width: 310px;
+  }
+}
+
+/* Mobile 360 */
+@media screen and (max-width: 360px) {
+  #about-information {
+    width: auto;
+    height: auto;
+    padding: 20px; 
+    border-radius: 10px;
+    background-color: #3b3b3b;
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    margin: 10px;
   }
 }
 </style>
