@@ -400,7 +400,7 @@ button {
   #about-information {
     width: auto;
     height: auto;
-    padding: 20px; 
+    padding: 20.1px; 
     border-radius: 10px;
     background-color: #3b3b3b;
     display: flex;
