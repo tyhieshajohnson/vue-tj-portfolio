@@ -1,8 +1,6 @@
 <!-- HTML -->
 <template>
-  <div>
-    <div class="projects">
-      <h1
+  <div><h1
         style="
           font-family: 'Manrope', sans-serif;
           display: flex;
@@ -13,6 +11,8 @@
       >
         Projects
       </h1>
+    <div class="projects">
+      
       <Projects
         v-for="project of projects"
         :key="projects.id"
